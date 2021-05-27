@@ -1,0 +1,151 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Feb  9 23:17:54 2021
+# Process ID: 18108
+# Current directory: C:/Users/Robby/Desktop/Lab2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14872 C:\Users\Robby\Desktop\Lab2\Lab2.xpr
+# Log file: C:/Users/Robby/Desktop/Lab2/vivado.log
+# Journal file: C:/Users/Robby/Desktop/Lab2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Robby/Desktop/Lab2/Lab2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:05 . Memory (MB): peak = 789.363 ; gain = 105.539
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'debouncer_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj debouncer_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/debouncer_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot debouncer_tb_behav xil_defaultlib.debouncer_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot debouncer_tb_behav xil_defaultlib.debouncer_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.REGISTER_R(N=5,INIT=0)
+Compiling module xil_defaultlib.REGISTER_R_CE(N=3,INIT=0)
+Compiling module xil_defaultlib.debouncer(SAMPLE_CNT_MAX=10,PULS...
+Compiling module xil_defaultlib.debouncer_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot debouncer_tb_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim/xsim.dir/debouncer_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim/xsim.dir/debouncer_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Feb  9 23:18:39 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Feb  9 23:18:39 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "debouncer_tb_behav -key {Behavioral:sim_1:Functional:debouncer_tb} -tclbatch {debouncer_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source debouncer_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'debouncer_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 888.535 ; gain = 15.988
+run all
+Failure 1: The debounced output[0] should have gone high by now                 1212
+Failure 2: The debounced output[0] should stay high once the counter saturates at                 1220
+Failure 2: The debounced output[0] should stay high once the counter saturates at                 1228
+Failure 2: The debounced output[0] should stay high once the counter saturates at                 1236
+Failure 2: The debounced output[0] should stay high once the counter saturates at                 1244
+Failure 2: The debounced output[0] should stay high once the counter saturates at                 1252
+Failure 2: The debounced output[0] should stay high once the counter saturates at                 1260
+Failure 2: The debounced output[0] should stay high once the counter saturates at                 1268
+Failure 2: The debounced output[0] should stay high once the counter saturates at                 1276
+Failure 2: The debounced output[0] should stay high once the counter saturates at                 1284
+Failure 2: The debounced output[0] should stay high once the counter saturates at                 1292
+Failure 2: The debounced output[0] should stay high once the counter saturates at                 1300
+Failure 2: The debounced output[0] should stay high once the counter saturates at                 1308
+Failure 2: The debounced output[0] should stay high once the counter saturates at                 1316
+Failure 2: The debounced output[0] should stay high once the counter saturates at                 1324
+Failure 2: The debounced output[0] should stay high once the counter saturates at                 1332
+Failure 2: The debounced output[0] should stay high once the counter saturates at                 1340
+Failure 2: The debounced output[0] should stay high once the counter saturates at                 1348
+Failure 2: The debounced output[0] should stay high once the counter saturates at                 1356
+Failure 2: The debounced output[0] should stay high once the counter saturates at                 1364
+Failure 2: The debounced output[0] should stay high once the counter saturates at                 1372
+Failure 2: The debounced output[0] should stay high once the counter saturates at                 1380
+Failure 2: The debounced output[0] should stay high once the counter saturates at                 1388
+Failure 2: The debounced output[0] should stay high once the counter saturates at                 1396
+Failure 2: The debounced output[0] should stay high once the counter saturates at                 1404
+Failure 2: The debounced output[0] should stay high once the counter saturates at                 1412
+Failure 2: The debounced output[0] should stay high once the counter saturates at                 1420
+Failure 2: The debounced output[0] should stay high once the counter saturates at                 1428
+Failure 2: The debounced output[0] should stay high once the counter saturates at                 1436
+Failure 2: The debounced output[0] should stay high once the counter saturates at                 1444
+Failure 2: The debounced output[0] should stay high once the counter saturates at                 1452
+Done!
+$finish called at time : 2056 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/debouncer_tb.v" Line 98
+run all
+run: Time (s): cpu = 00:04:32 ; elapsed = 00:04:15 . Memory (MB): peak = 890.953 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'debouncer_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj debouncer_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot debouncer_tb_behav xil_defaultlib.debouncer_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot debouncer_tb_behav xil_defaultlib.debouncer_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 890.953 ; gain = 0.000
+set_property top sync_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Feb  9 23:34:08 2021...

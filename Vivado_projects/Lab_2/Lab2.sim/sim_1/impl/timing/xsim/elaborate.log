@@ -1,0 +1,19 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot z1top_mode_counter_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.z1top_mode_counter xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer(WIDTH=4)
+Compiling module xil_defaultlib.REGISTER_R(N=17,INIT=0)
+Compiling module xil_defaultlib.REGISTER_R_CE(N=9,INIT=0)
+Compiling module xil_defaultlib.debouncer(WIDTH=4,SAMPLE_CNT_MAX...
+Compiling module xil_defaultlib.edge_detector(WIDTH=4)
+Compiling module xil_defaultlib.button_parser(WIDTH=4,SAMPLE_CNT...
+Compiling module xil_defaultlib.REGISTER_R(N=4,INIT=0)
+Compiling module xil_defaultlib.z1top_mode_counter
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot z1top_mode_counter_time_impl

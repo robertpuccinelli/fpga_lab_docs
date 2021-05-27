@@ -1,0 +1,677 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Feb  9 22:47:09 2021
+# Process ID: 7908
+# Current directory: C:/Users/Robby/Desktop/Lab2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18696 C:\Users\Robby\Desktop\Lab2\Lab2.xpr
+# Log file: C:/Users/Robby/Desktop/Lab2/vivado.log
+# Journal file: C:/Users/Robby/Desktop/Lab2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Robby/Desktop/Lab2/Lab2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:05 . Memory (MB): peak = 739.918 ; gain = 107.527
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+WARNING: [VRFC 10-3380] identifier 'N' is used before its declaration [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:4]
+WARNING: [VRFC 10-3380] identifier 'N' is used before its declaration [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:5]
+WARNING: [VRFC 10-3380] identifier 'N' is used before its declaration [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:6]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 31 for port 'a' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:16]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 31 for port 'b' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:17]
+WARNING: [VRFC 10-3091] actual bit length 33 differs from formal bit length 32 for port 'sum' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:18]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.structural_adder(N=32)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim/xsim.dir/structural_adder_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim/xsim.dir/structural_adder_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Feb  9 22:47:53 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Feb  9 22:47:53 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 784.477 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 900 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 30
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 815.562 ; gain = 31.086
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 835.199 ; gain = 3.719
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+WARNING: [VRFC 10-3380] identifier 'N' is used before its declaration [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:4]
+WARNING: [VRFC 10-3380] identifier 'N' is used before its declaration [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:5]
+WARNING: [VRFC 10-3380] identifier 'N' is used before its declaration [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:6]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 31 for port 'a' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:16]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 31 for port 'b' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:17]
+WARNING: [VRFC 10-3091] actual bit length 33 differs from formal bit length 32 for port 'sum' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:18]
+WARNING: [VRFC 10-3705] select index 31 into 'a' is out of bounds [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:16]
+WARNING: [VRFC 10-3283] element index 32 into 'carry_in' is out of bounds [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:16]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.structural_adder(N=32)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 900 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 30
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 880.492 ; gain = 45.293
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+WARNING: [VRFC 10-3380] identifier 'N' is used before its declaration [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:4]
+WARNING: [VRFC 10-3380] identifier 'N' is used before its declaration [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:5]
+WARNING: [VRFC 10-3380] identifier 'N' is used before its declaration [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:6]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3283] element index 32 into 'carry_in' is out of bounds [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:16]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.structural_adder(N=32)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 900 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 30
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 880.492 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+WARNING: [VRFC 10-3380] identifier 'N' is used before its declaration [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:4]
+WARNING: [VRFC 10-3380] identifier 'N' is used before its declaration [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:5]
+WARNING: [VRFC 10-3380] identifier 'N' is used before its declaration [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:6]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3283] element index 32 into 'carry_in' is out of bounds [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:16]
+WARNING: [VRFC 10-3705] select index 32 into 'a' is out of bounds [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:16]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.structural_adder(N=32)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 900 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 30
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 880.492 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+WARNING: [VRFC 10-3380] identifier 'N' is used before its declaration [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:4]
+WARNING: [VRFC 10-3380] identifier 'N' is used before its declaration [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:5]
+WARNING: [VRFC 10-3380] identifier 'N' is used before its declaration [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:6]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 33 for port 'a' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:16]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 33 for port 'b' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:17]
+WARNING: [VRFC 10-3091] actual bit length 33 differs from formal bit length 34 for port 'sum' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:18]
+WARNING: [VRFC 10-3283] element index 33 into 'carry_in' is out of bounds [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:16]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.structural_adder(N=32)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 900 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 30
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 880.492 ; gain = 0.000
+add_bp {C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v} 11
+remove_bps -file {C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v} -line 11
+add_bp {C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v} 11
+remove_bps -file {C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v} -line 11
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+WARNING: [VRFC 10-3380] identifier 'N' is used before its declaration [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:4]
+WARNING: [VRFC 10-3380] identifier 'N' is used before its declaration [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:5]
+WARNING: [VRFC 10-3380] identifier 'N' is used before its declaration [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:6]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.structural_adder(N=32)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 900 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 30
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 880.492 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+$finish called at time : 900 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 30
+relaunch_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 880.492 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:01:08 ; elapsed = 00:01:02 . Memory (MB): peak = 880.492 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+$finish called at time : 900 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 30
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 880.492 ; gain = 0.000
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/debouncer_tb.v C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/sync_tb.v C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/edge_detector_tb.v}
+update_compile_order -fileset sim_1
+set_property top debouncer_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Feb  9 23:17:48 2021...

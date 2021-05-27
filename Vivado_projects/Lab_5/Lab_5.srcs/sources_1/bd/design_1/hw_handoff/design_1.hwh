@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Mar  7 17:15:57 2021" VIVADOVERSION="2019.1">
+
+  <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="CLK_125MHZ_FPGA" SIGIS="undef" SIGNAME="External_Ports_CLK_125MHZ_FPGA">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="z1top_draw_triangle_0" PORT="CLK_125MHZ_FPGA"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="5" NAME="LEDS" RIGHT="0" SIGIS="undef" SIGNAME="z1top_draw_triangle_0_LEDS">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="z1top_draw_triangle_0" PORT="LEDS"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="3" NAME="BUTTONS" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_BUTTONS">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="z1top_draw_triangle_0" PORT="BUTTONS"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="SWITCHES" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_SWITCHES">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="z1top_draw_triangle_0" PORT="SWITCHES"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="FPGA_SERIAL_RX" SIGIS="undef" SIGNAME="External_Ports_FPGA_SERIAL_RX">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="z1top_draw_triangle_0" PORT="FPGA_SERIAL_RX"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="TMDS_0_clk_p" SIGIS="clk" SIGNAME="rgb2dvi_0_TMDS_Clk_p">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="rgb2dvi_0" PORT="TMDS_Clk_p"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="TMDS_0_clk_n" SIGIS="clk" SIGNAME="rgb2dvi_0_TMDS_Clk_n">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="rgb2dvi_0" PORT="TMDS_Clk_n"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="TMDS_0_data_p" RIGHT="0" SIGIS="undef" SIGNAME="rgb2dvi_0_TMDS_Data_p">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="rgb2dvi_0" PORT="TMDS_Data_p"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="TMDS_0_data_n" RIGHT="0" SIGIS="undef" SIGNAME="rgb2dvi_0_TMDS_Data_n">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="rgb2dvi_0" PORT="TMDS_Data_n"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES>
+    <BUSINTERFACE BUSNAME="rgb2dvi_0_TMDS" NAME="TMDS_0" TYPE="INITIATOR">
+      <PORTMAPS>
+        <PORTMAP LOGICAL="CLK_P" PHYSICAL="TMDS_0_clk_p"/>
+        <PORTMAP LOGICAL="CLK_N" PHYSICAL="TMDS_0_clk_n"/>
+        <PORTMAP LOGICAL="DATA_P" PHYSICAL="TMDS_0_data_p"/>
+        <PORTMAP LOGICAL="DATA_N" PHYSICAL="TMDS_0_data_n"/>
+      </PORTMAPS>
+    </BUSINTERFACE>
+  </EXTERNALINTERFACES>
+
+  <MODULES>
+    <MODULE COREREVISION="7" FULLNAME="/rgb2dvi_0" HWVERSION="1.4" INSTANCE="rgb2dvi_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="rgb2dvi" VLNV="digilentinc.com:ip:rgb2dvi:1.4">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="c:/Users/Robby/Desktop/fpga_labs_sp21-main/lab5/digilent_ips/rgb2dvi/docs/rgb2dvi.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="kGenerateSerialClk" VALUE="true"/>
+        <PARAMETER NAME="kClkPrimitive" VALUE="PLL"/>
+        <PARAMETER NAME="kRstActiveHigh" VALUE="true"/>
+        <PARAMETER NAME="kClkRange" VALUE="3"/>
+        <PARAMETER NAME="kD0Swap" VALUE="false"/>
+        <PARAMETER NAME="kD1Swap" VALUE="false"/>
+        <PARAMETER NAME="kD2Swap" VALUE="false"/>
+        <PARAMETER NAME="kClkSwap" VALUE="false"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_rgb2dvi_0_0"/>
+        <PARAMETER NAME="TMDS_BOARD_INTERFACE"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="TMDS_Clk_p" SIGIS="clk" SIGNAME="rgb2dvi_0_TMDS_Clk_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="TMDS_0_clk_p"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="TMDS_Clk_n" SIGIS="clk" SIGNAME="rgb2dvi_0_TMDS_Clk_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="TMDS_0_clk_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="TMDS_Data_p" RIGHT="0" SIGIS="undef" SIGNAME="rgb2dvi_0_TMDS_Data_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="TMDS_0_data_p"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="TMDS_Data_n" RIGHT="0" SIGIS="undef" SIGNAME="rgb2dvi_0_TMDS_Data_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="TMDS_0_data_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="aRst" SIGIS="rst"/>
+        <PORT DIR="I" LEFT="23" NAME="vid_pData" RIGHT="0" SIGIS="undef" SIGNAME="z1top_draw_triangle_0_video_out_pData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="z1top_draw_triangle_0" PORT="video_out_pData"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="vid_pVDE" SIGIS="undef" SIGNAME="z1top_draw_triangle_0_video_out_pVDE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="z1top_draw_triangle_0" PORT="video_out_pVDE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="vid_pHSync" SIGIS="undef" SIGNAME="z1top_draw_triangle_0_video_out_pHSync">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="z1top_draw_triangle_0" PORT="video_out_pHSync"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="vid_pVSync" SIGIS="undef" SIGNAME="z1top_draw_triangle_0_video_out_pVSync">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="z1top_draw_triangle_0" PORT="video_out_pVSync"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="PixelClk" SIGIS="clk" SIGNAME="z1top_draw_triangle_0_pixel_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="z1top_draw_triangle_0" PORT="pixel_clk"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="rgb2dvi_0_TMDS" NAME="TMDS" TYPE="INITIATOR" VLNV="digilentinc.com:interface:tmds:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="CLK_P" PHYSICAL="TMDS_Clk_p"/>
+            <PORTMAP LOGICAL="CLK_N" PHYSICAL="TMDS_Clk_n"/>
+            <PORTMAP LOGICAL="DATA_P" PHYSICAL="TMDS_Data_p"/>
+            <PORTMAP LOGICAL="DATA_N" PHYSICAL="TMDS_Data_n"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="RGB" TYPE="TARGET" VLNV="xilinx.com:interface:vid_io:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="DATA" PHYSICAL="vid_pData"/>
+            <PORTMAP LOGICAL="HSYNC" PHYSICAL="vid_pHSync"/>
+            <PORTMAP LOGICAL="VSYNC" PHYSICAL="vid_pVSync"/>
+            <PORTMAP LOGICAL="ACTIVE_VIDEO" PHYSICAL="vid_pVDE"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/z1top_draw_triangle_0" HWVERSION="1.0" INSTANCE="z1top_draw_triangle_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="z1top_draw_triangle" VLNV="xilinx.com:module_ref:z1top_draw_triangle:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_z1top_draw_triangle_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="CLK_125MHZ_FPGA" SIGIS="undef" SIGNAME="External_Ports_CLK_125MHZ_FPGA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK_125MHZ_FPGA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="BUTTONS" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_BUTTONS">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BUTTONS"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="SWITCHES" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_SWITCHES">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SWITCHES"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="5" NAME="LEDS" RIGHT="0" SIGIS="undef" SIGNAME="z1top_draw_triangle_0_LEDS">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="LEDS"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="pixel_clk" SIGIS="clk" SIGNAME="z1top_draw_triangle_0_pixel_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rgb2dvi_0" PORT="PixelClk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="video_out_pData" RIGHT="0" SIGIS="undef" SIGNAME="z1top_draw_triangle_0_video_out_pData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rgb2dvi_0" PORT="vid_pData"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="video_out_pHSync" SIGIS="undef" SIGNAME="z1top_draw_triangle_0_video_out_pHSync">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rgb2dvi_0" PORT="vid_pHSync"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="video_out_pVSync" SIGIS="undef" SIGNAME="z1top_draw_triangle_0_video_out_pVSync">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rgb2dvi_0" PORT="vid_pVSync"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="video_out_pVDE" SIGIS="undef" SIGNAME="z1top_draw_triangle_0_video_out_pVDE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rgb2dvi_0" PORT="vid_pVDE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="FPGA_SERIAL_RX" SIGIS="undef" SIGNAME="External_Ports_FPGA_SERIAL_RX">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="FPGA_SERIAL_RX"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="FPGA_SERIAL_TX" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

@@ -1,0 +1,13 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER
+INFO: [VRFC 10-311] analyzing module REGISTER_CE
+INFO: [VRFC 10-311] analyzing module REGISTER_R
+INFO: [VRFC 10-311] analyzing module REGISTER_R_CE
+INFO: [VRFC 10-311] analyzing module ASYNC_ROM
+INFO: [VRFC 10-311] analyzing module ASYNC_RAM
+INFO: [VRFC 10-311] analyzing module SYNC_ROM
+INFO: [VRFC 10-311] analyzing module SYNC_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb

@@ -1,0 +1,14 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/Robby/Desktop/Lab_5/Lab_5.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab5/sim/echo_tb.v,1614102428,verilog,,,,echo_tb,,,../../../../../fpga_labs_sp21-main/lab5/src,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab5/sim/inside_test_tb.v,1614102428,verilog,,,C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab5/src/colors.vh,inside_test_tb,,,../../../../../fpga_labs_sp21-main/lab5/src,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab5/sim/uart_transmitter_tb.v,1614102428,verilog,,,,uart_transmitter_tb,,,../../../../../fpga_labs_sp21-main/lab5/src,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab5/src/colors.vh,1614102428,verilog,,,,,,,,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab5/src/inside_test.v,1615166038,verilog,,C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab5/sim/inside_test_tb.v,,inside_test,,,../../../../../fpga_labs_sp21-main/lab5/src,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab5/src/uart.v,1615100191,verilog,,C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab5/src/uart_receiver.v,,uart,,,../../../../../fpga_labs_sp21-main/lab5/src,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab5/src/uart_receiver.v,1614102429,verilog,,C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab5/src/uart_transmitter.v,,uart_receiver,,,../../../../../fpga_labs_sp21-main/lab5/src,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab5/src/uart_transmitter.v,1615095925,verilog,,C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab5/sim/echo_tb.v,,uart_transmitter,,,../../../../../fpga_labs_sp21-main/lab5/src,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v,1614657640,verilog,,C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab5/src/inside_test.v,,ASYNC_RAM;ASYNC_RAM_DP;ASYNC_ROM;REGISTER;REGISTER_CE;REGISTER_R;REGISTER_R_CE;SYNC_RAM;SYNC_RAM_DP;SYNC_ROM,,,../../../../../fpga_labs_sp21-main/lab5/src,,,,,

@@ -1,0 +1,2112 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Feb 10 16:36:24 2021
+# Process ID: 17492
+# Current directory: C:/Users/Robby/Desktop/Lab2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2856 C:\Users\Robby\Desktop\Lab2\Lab2.xpr
+# Log file: C:/Users/Robby/Desktop/Lab2/vivado.log
+# Journal file: C:/Users/Robby/Desktop/Lab2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Robby/Desktop/Lab2/Lab2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:06 . Memory (MB): peak = 713.062 ; gain = 69.250
+update_compile_order -fileset sources_1
+set_property top z1top_adder [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Wed Feb 10 16:37:18 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Robby/Desktop/Lab2/Lab2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+[Wed Feb 10 16:38:10 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Robby/Desktop/Lab2/Lab2.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xa7z020clg400-1I
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1459.223 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1459.223 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1459.223 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:33 ; elapsed = 00:00:20 . Memory (MB): peak = 1665.691 ; gain = 888.168
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xa7z020clg400-1I
+Top: z1top_adder
+WARNING: [Synth 8-6901] identifier 'N' is used before its declaration [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:4]
+WARNING: [Synth 8-6901] identifier 'N' is used before its declaration [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:5]
+WARNING: [Synth 8-6901] identifier 'N' is used before its declaration [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:6]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1668.742 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'z1top_adder' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/z1top_adder.v:3]
+INFO: [Synth 8-6157] synthesizing module 'structural_adder' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:3]
+	Parameter N bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'full_adder' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'full_adder' (1#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'structural_adder' (2#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'z1top_adder' (3#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/z1top_adder.v:3]
+WARNING: [Synth 8-3917] design z1top_adder has port LEDS[5] driven by constant 0
+WARNING: [Synth 8-3917] design z1top_adder has port LEDS[4] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1668.742 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1668.742 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1668.742 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 2 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/constr/z1top.xdc]
+WARNING: [Vivado 12-584] No ports matched 'CLK_125MHZ_FPGA'. [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/constr/z1top.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/constr/z1top.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CLK_125MHZ_FPGA'. [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/constr/z1top.xdc:5]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports CLK_125MHZ_FPGA]'. [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/constr/z1top.xdc:5]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/constr/z1top.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1668.742 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1668.742 ; gain = 0.000
+10 Infos, 7 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1668.742 ; gain = 0.000
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xa7z020clg400-1I
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/constr/z1top.xdc]
+WARNING: [Vivado 12-584] No ports matched 'CLK_125MHZ_FPGA'. [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/constr/z1top.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/constr/z1top.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CLK_125MHZ_FPGA'. [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/constr/z1top.xdc:5]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports CLK_125MHZ_FPGA]'. [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/constr/z1top.xdc:5]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/constr/z1top.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1675.684 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run impl_1
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1877.152 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1877.152 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1877.152 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Wed Feb 10 17:01:01 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Robby/Desktop/Lab2/Lab2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Feb 10 17:02:45 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Robby/Desktop/Lab2/Lab2.runs/impl_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xa7z020clg400-1I
+Top: z1top_adder
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2111.539 ; gain = 34.945
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'z1top_adder' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/z1top_adder.v:3]
+INFO: [Synth 8-6157] synthesizing module 'behavioral_adder' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/behavioral_adder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'behavioral_adder' (1#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/behavioral_adder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'z1top_adder' (2#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/z1top_adder.v:3]
+WARNING: [Synth 8-3917] design z1top_adder has port LEDS[5] driven by constant 0
+WARNING: [Synth 8-3917] design z1top_adder has port LEDS[4] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2134.410 ; gain = 57.816
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2157.297 ; gain = 80.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2157.297 ; gain = 80.703
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 2 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/constr/z1top.xdc]
+WARNING: [Vivado 12-584] No ports matched 'CLK_125MHZ_FPGA'. [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/constr/z1top.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/constr/z1top.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CLK_125MHZ_FPGA'. [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/constr/z1top.xdc:5]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports CLK_125MHZ_FPGA]'. [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/constr/z1top.xdc:5]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/constr/z1top.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2206.285 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2232.703 ; gain = 156.109
+8 Infos, 4 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2232.703 ; gain = 156.109
+current_design impl_1
+refresh_design
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 2327.254 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 2327.254 ; gain = 0.000
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Wed Feb 10 17:21:09 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Robby/Desktop/Lab2/Lab2.runs/synth_1/runme.log
+current_design synth_1
+refresh_design
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/constr/z1top.xdc]
+WARNING: [Vivado 12-584] No ports matched 'CLK_125MHZ_FPGA'. [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/constr/z1top.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/constr/z1top.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CLK_125MHZ_FPGA'. [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/constr/z1top.xdc:5]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports CLK_125MHZ_FPGA]'. [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/constr/z1top.xdc:5]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/constr/z1top.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Wed Feb 10 17:38:45 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Robby/Desktop/Lab2/Lab2.runs/synth_1/runme.log
+set_property top structural_adder_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+WARNING: [VRFC 10-3380] identifier 'N' is used before its declaration [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:4]
+WARNING: [VRFC 10-3380] identifier 'N' is used before its declaration [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:5]
+WARNING: [VRFC 10-3380] identifier 'N' is used before its declaration [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:6]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.structural_adder(N=32)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 900 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 30
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2525.664 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 2525.664 ; gain = 0.000
+run 10 us
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER
+INFO: [VRFC 10-311] analyzing module REGISTER_CE
+INFO: [VRFC 10-311] analyzing module REGISTER_R
+INFO: [VRFC 10-311] analyzing module REGISTER_R_CE
+INFO: [VRFC 10-311] analyzing module ASYNC_ROM
+INFO: [VRFC 10-311] analyzing module ASYNC_RAM
+INFO: [VRFC 10-311] analyzing module SYNC_ROM
+INFO: [VRFC 10-311] analyzing module SYNC_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+WARNING: [VRFC 10-3380] identifier 'N' is used before its declaration [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:4]
+WARNING: [VRFC 10-3380] identifier 'N' is used before its declaration [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:5]
+WARNING: [VRFC 10-3380] identifier 'N' is used before its declaration [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:7]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 33 differs from formal bit length 1 for port 'd' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:11]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.REGISTER
+Compiling module xil_defaultlib.structural_adder(N=32)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 900 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 31
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2525.664 ; gain = 0.000
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER
+INFO: [VRFC 10-311] analyzing module REGISTER_CE
+INFO: [VRFC 10-311] analyzing module REGISTER_R
+INFO: [VRFC 10-311] analyzing module REGISTER_R_CE
+INFO: [VRFC 10-311] analyzing module ASYNC_ROM
+INFO: [VRFC 10-311] analyzing module ASYNC_RAM
+INFO: [VRFC 10-311] analyzing module SYNC_ROM
+INFO: [VRFC 10-311] analyzing module SYNC_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 33 differs from formal bit length 32 for port 'd' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:10]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.REGISTER(N=32)
+Compiling module xil_defaultlib.structural_adder(N=32)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 900 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 31
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2525.664 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER
+INFO: [VRFC 10-311] analyzing module REGISTER_CE
+INFO: [VRFC 10-311] analyzing module REGISTER_R
+INFO: [VRFC 10-311] analyzing module REGISTER_R_CE
+INFO: [VRFC 10-311] analyzing module ASYNC_ROM
+INFO: [VRFC 10-311] analyzing module ASYNC_RAM
+INFO: [VRFC 10-311] analyzing module SYNC_ROM
+INFO: [VRFC 10-311] analyzing module SYNC_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2861] module 'REGISTER' does not have a parameter named INIT [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:10]
+WARNING: [VRFC 10-3091] actual bit length 33 differs from formal bit length 32 for port 'd' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:10]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.REGISTER(N=32)
+Compiling module xil_defaultlib.structural_adder(N=32)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 900 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 31
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 2525.664 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER
+INFO: [VRFC 10-311] analyzing module REGISTER_CE
+INFO: [VRFC 10-311] analyzing module REGISTER_R
+INFO: [VRFC 10-311] analyzing module REGISTER_R_CE
+INFO: [VRFC 10-311] analyzing module ASYNC_ROM
+INFO: [VRFC 10-311] analyzing module ASYNC_RAM
+INFO: [VRFC 10-311] analyzing module SYNC_ROM
+INFO: [VRFC 10-311] analyzing module SYNC_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 33 differs from formal bit length 32 for port 'd' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:10]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.REGISTER(N=32)
+Compiling module xil_defaultlib.structural_adder(N=32)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 900 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 31
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2525.664 ; gain = 0.000
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER
+INFO: [VRFC 10-311] analyzing module REGISTER_CE
+INFO: [VRFC 10-311] analyzing module REGISTER_R
+INFO: [VRFC 10-311] analyzing module REGISTER_R_CE
+INFO: [VRFC 10-311] analyzing module ASYNC_ROM
+INFO: [VRFC 10-311] analyzing module ASYNC_RAM
+INFO: [VRFC 10-311] analyzing module SYNC_ROM
+INFO: [VRFC 10-311] analyzing module SYNC_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 33 differs from formal bit length 32 for port 'd' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:10]
+WARNING: [VRFC 10-3283] element index 9 into 'arr' is out of bounds [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:23]
+WARNING: [VRFC 10-3283] element index 9 into 'arr' is out of bounds [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:24]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.REGISTER(N=32)
+Compiling module xil_defaultlib.structural_adder(N=32)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 40 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 34
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2525.664 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER
+INFO: [VRFC 10-311] analyzing module REGISTER_CE
+INFO: [VRFC 10-311] analyzing module REGISTER_R
+INFO: [VRFC 10-311] analyzing module REGISTER_R_CE
+INFO: [VRFC 10-311] analyzing module ASYNC_ROM
+INFO: [VRFC 10-311] analyzing module ASYNC_RAM
+INFO: [VRFC 10-311] analyzing module SYNC_ROM
+INFO: [VRFC 10-311] analyzing module SYNC_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 33 differs from formal bit length 32 for port 'd' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:10]
+WARNING: [VRFC 10-3283] element index 2 into 'arr' is out of bounds [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:26]
+WARNING: [VRFC 10-3283] element index 2 into 'arr' is out of bounds [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:27]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.REGISTER(N=32)
+Compiling module xil_defaultlib.structural_adder(N=32)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 40 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 39
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 2525.664 ; gain = 0.000
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER
+INFO: [VRFC 10-311] analyzing module REGISTER_CE
+INFO: [VRFC 10-311] analyzing module REGISTER_R
+INFO: [VRFC 10-311] analyzing module REGISTER_R_CE
+INFO: [VRFC 10-311] analyzing module ASYNC_ROM
+INFO: [VRFC 10-311] analyzing module ASYNC_RAM
+INFO: [VRFC 10-311] analyzing module SYNC_ROM
+INFO: [VRFC 10-311] analyzing module SYNC_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 32 for port 'a' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:16]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 32 for port 'b' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:17]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 33 for port 'sum' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:18]
+WARNING: [VRFC 10-3091] actual bit length 33 differs from formal bit length 32 for port 'd' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:10]
+WARNING: [VRFC 10-3283] element index 2 into 'arr' is out of bounds [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:26]
+WARNING: [VRFC 10-3283] element index 2 into 'arr' is out of bounds [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:27]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.REGISTER(N=32)
+Compiling module xil_defaultlib.structural_adder(N=32)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 40 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 39
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2525.664 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER
+INFO: [VRFC 10-311] analyzing module REGISTER_CE
+INFO: [VRFC 10-311] analyzing module REGISTER_R
+INFO: [VRFC 10-311] analyzing module REGISTER_R_CE
+INFO: [VRFC 10-311] analyzing module ASYNC_ROM
+INFO: [VRFC 10-311] analyzing module ASYNC_RAM
+INFO: [VRFC 10-311] analyzing module SYNC_ROM
+INFO: [VRFC 10-311] analyzing module SYNC_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 32 for port 'a' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:16]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 32 for port 'b' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:17]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 33 for port 'sum' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:18]
+WARNING: [VRFC 10-3091] actual bit length 33 differs from formal bit length 32 for port 'd' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:10]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.REGISTER(N=32)
+Compiling module xil_defaultlib.structural_adder(N=32)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 40 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 39
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 2525.664 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2525.664 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER
+INFO: [VRFC 10-311] analyzing module REGISTER_CE
+INFO: [VRFC 10-311] analyzing module REGISTER_R
+INFO: [VRFC 10-311] analyzing module REGISTER_R_CE
+INFO: [VRFC 10-311] analyzing module ASYNC_ROM
+INFO: [VRFC 10-311] analyzing module ASYNC_RAM
+INFO: [VRFC 10-311] analyzing module SYNC_ROM
+INFO: [VRFC 10-311] analyzing module SYNC_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 32 for port 'a' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:16]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 32 for port 'b' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:17]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 33 for port 'sum' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:18]
+WARNING: [VRFC 10-3091] actual bit length 33 differs from formal bit length 32 for port 'd' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:10]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.REGISTER(N=32)
+Compiling module xil_defaultlib.structural_adder(N=32)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 40 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 39
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2525.664 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER
+INFO: [VRFC 10-311] analyzing module REGISTER_CE
+INFO: [VRFC 10-311] analyzing module REGISTER_R
+INFO: [VRFC 10-311] analyzing module REGISTER_R_CE
+INFO: [VRFC 10-311] analyzing module ASYNC_ROM
+INFO: [VRFC 10-311] analyzing module ASYNC_RAM
+INFO: [VRFC 10-311] analyzing module SYNC_ROM
+INFO: [VRFC 10-311] analyzing module SYNC_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'a' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:16]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'b' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:17]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 33 for port 'sum' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:18]
+WARNING: [VRFC 10-3091] actual bit length 33 differs from formal bit length 32 for port 'd' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:10]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.REGISTER(N=32)
+Compiling module xil_defaultlib.structural_adder(N=32)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 40 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 39
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 2525.664 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER
+INFO: [VRFC 10-311] analyzing module REGISTER_CE
+INFO: [VRFC 10-311] analyzing module REGISTER_R
+INFO: [VRFC 10-311] analyzing module REGISTER_R_CE
+INFO: [VRFC 10-311] analyzing module ASYNC_ROM
+INFO: [VRFC 10-311] analyzing module ASYNC_RAM
+INFO: [VRFC 10-311] analyzing module SYNC_ROM
+INFO: [VRFC 10-311] analyzing module SYNC_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'a' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:16]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'b' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:17]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 33 for port 'sum' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:18]
+WARNING: [VRFC 10-3091] actual bit length 33 differs from formal bit length 32 for port 'd' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:10]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.REGISTER(N=32)
+Compiling module xil_defaultlib.structural_adder(N=32)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 40 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 37
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2525.664 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 2525.664 ; gain = 0.000
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER
+INFO: [VRFC 10-311] analyzing module REGISTER_CE
+INFO: [VRFC 10-311] analyzing module REGISTER_R
+INFO: [VRFC 10-311] analyzing module REGISTER_R_CE
+INFO: [VRFC 10-311] analyzing module ASYNC_ROM
+INFO: [VRFC 10-311] analyzing module ASYNC_RAM
+INFO: [VRFC 10-311] analyzing module SYNC_ROM
+INFO: [VRFC 10-311] analyzing module SYNC_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'a' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:17]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'b' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:18]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 33 for port 'sum' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:19]
+WARNING: [VRFC 10-3091] actual bit length 33 differs from formal bit length 32 for port 'd' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:10]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.REGISTER(N=32)
+Compiling module xil_defaultlib.structural_adder(N=32)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 40 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2525.664 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER
+INFO: [VRFC 10-311] analyzing module REGISTER_CE
+INFO: [VRFC 10-311] analyzing module REGISTER_R
+INFO: [VRFC 10-311] analyzing module REGISTER_R_CE
+INFO: [VRFC 10-311] analyzing module ASYNC_ROM
+INFO: [VRFC 10-311] analyzing module ASYNC_RAM
+INFO: [VRFC 10-311] analyzing module SYNC_ROM
+INFO: [VRFC 10-311] analyzing module SYNC_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'a' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:17]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'b' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:18]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 33 for port 'sum' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:19]
+WARNING: [VRFC 10-3091] actual bit length 33 differs from formal bit length 32 for port 'd' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:10]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.REGISTER(N=32)
+Compiling module xil_defaultlib.structural_adder(N=32)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 40 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2525.664 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER
+INFO: [VRFC 10-311] analyzing module REGISTER_CE
+INFO: [VRFC 10-311] analyzing module REGISTER_R
+INFO: [VRFC 10-311] analyzing module REGISTER_R_CE
+INFO: [VRFC 10-311] analyzing module ASYNC_ROM
+INFO: [VRFC 10-311] analyzing module ASYNC_RAM
+INFO: [VRFC 10-311] analyzing module SYNC_ROM
+INFO: [VRFC 10-311] analyzing module SYNC_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'd' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:10]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.REGISTER(N=8)
+Compiling module xil_defaultlib.structural_adder(N=8)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 40 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 2525.664 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER
+INFO: [VRFC 10-311] analyzing module REGISTER_CE
+INFO: [VRFC 10-311] analyzing module REGISTER_R
+INFO: [VRFC 10-311] analyzing module REGISTER_R_CE
+INFO: [VRFC 10-311] analyzing module ASYNC_ROM
+INFO: [VRFC 10-311] analyzing module ASYNC_RAM
+INFO: [VRFC 10-311] analyzing module SYNC_ROM
+INFO: [VRFC 10-311] analyzing module SYNC_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'd' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:10]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.REGISTER(N=8)
+Compiling module xil_defaultlib.structural_adder(N=8)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 40 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2525.664 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER
+INFO: [VRFC 10-311] analyzing module REGISTER_CE
+INFO: [VRFC 10-311] analyzing module REGISTER_R
+INFO: [VRFC 10-311] analyzing module REGISTER_R_CE
+INFO: [VRFC 10-311] analyzing module ASYNC_ROM
+INFO: [VRFC 10-311] analyzing module ASYNC_RAM
+INFO: [VRFC 10-311] analyzing module SYNC_ROM
+INFO: [VRFC 10-311] analyzing module SYNC_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'd' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:10]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.REGISTER(N=8)
+Compiling module xil_defaultlib.structural_adder(N=8)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 40 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 40
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 2525.664 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Robby/Desktop/Lab2/Lab2.runs/synth_1
+
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER
+INFO: [VRFC 10-311] analyzing module REGISTER_CE
+INFO: [VRFC 10-311] analyzing module REGISTER_R
+INFO: [VRFC 10-311] analyzing module REGISTER_R_CE
+INFO: [VRFC 10-311] analyzing module ASYNC_ROM
+INFO: [VRFC 10-311] analyzing module ASYNC_RAM
+INFO: [VRFC 10-311] analyzing module SYNC_ROM
+INFO: [VRFC 10-311] analyzing module SYNC_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'd' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:10]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.REGISTER(N=8)
+Compiling module xil_defaultlib.structural_adder(N=8)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 40 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 40
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2525.664 ; gain = 0.000
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER
+INFO: [VRFC 10-311] analyzing module REGISTER_CE
+INFO: [VRFC 10-311] analyzing module REGISTER_R
+INFO: [VRFC 10-311] analyzing module REGISTER_R_CE
+INFO: [VRFC 10-311] analyzing module ASYNC_ROM
+INFO: [VRFC 10-311] analyzing module ASYNC_RAM
+INFO: [VRFC 10-311] analyzing module SYNC_ROM
+INFO: [VRFC 10-311] analyzing module SYNC_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'd' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:10]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.REGISTER(N=8)
+Compiling module xil_defaultlib.structural_adder(N=8)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 40 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 40
+xsim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2525.664 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2525.664 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER
+INFO: [VRFC 10-311] analyzing module REGISTER_CE
+INFO: [VRFC 10-311] analyzing module REGISTER_R
+INFO: [VRFC 10-311] analyzing module REGISTER_R_CE
+INFO: [VRFC 10-311] analyzing module ASYNC_ROM
+INFO: [VRFC 10-311] analyzing module ASYNC_RAM
+INFO: [VRFC 10-311] analyzing module SYNC_ROM
+INFO: [VRFC 10-311] analyzing module SYNC_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'd' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:10]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.REGISTER(N=8)
+Compiling module xil_defaultlib.structural_adder(N=8)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 40 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 40
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2525.664 ; gain = 0.000
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER
+INFO: [VRFC 10-311] analyzing module REGISTER_CE
+INFO: [VRFC 10-311] analyzing module REGISTER_R
+INFO: [VRFC 10-311] analyzing module REGISTER_R_CE
+INFO: [VRFC 10-311] analyzing module ASYNC_ROM
+INFO: [VRFC 10-311] analyzing module ASYNC_RAM
+INFO: [VRFC 10-311] analyzing module SYNC_ROM
+INFO: [VRFC 10-311] analyzing module SYNC_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'd' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v:10]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.REGISTER(N=8)
+Compiling module xil_defaultlib.structural_adder(N=8)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 80 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 40
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2525.664 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER
+INFO: [VRFC 10-311] analyzing module REGISTER_CE
+INFO: [VRFC 10-311] analyzing module REGISTER_R
+INFO: [VRFC 10-311] analyzing module REGISTER_R_CE
+INFO: [VRFC 10-311] analyzing module ASYNC_ROM
+INFO: [VRFC 10-311] analyzing module ASYNC_RAM
+INFO: [VRFC 10-311] analyzing module SYNC_ROM
+INFO: [VRFC 10-311] analyzing module SYNC_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'sum' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:19]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.REGISTER(N=9)
+Compiling module xil_defaultlib.structural_adder(N=8)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 80 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 40
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2525.664 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER
+INFO: [VRFC 10-311] analyzing module REGISTER_CE
+INFO: [VRFC 10-311] analyzing module REGISTER_R
+INFO: [VRFC 10-311] analyzing module REGISTER_R_CE
+INFO: [VRFC 10-311] analyzing module ASYNC_ROM
+INFO: [VRFC 10-311] analyzing module ASYNC_RAM
+INFO: [VRFC 10-311] analyzing module SYNC_ROM
+INFO: [VRFC 10-311] analyzing module SYNC_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'sum' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:19]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.REGISTER(N=9)
+Compiling module xil_defaultlib.structural_adder(N=8)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 80 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 40
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2525.664 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER
+INFO: [VRFC 10-311] analyzing module REGISTER_CE
+INFO: [VRFC 10-311] analyzing module REGISTER_R
+INFO: [VRFC 10-311] analyzing module REGISTER_R_CE
+INFO: [VRFC 10-311] analyzing module ASYNC_ROM
+INFO: [VRFC 10-311] analyzing module ASYNC_RAM
+INFO: [VRFC 10-311] analyzing module SYNC_ROM
+INFO: [VRFC 10-311] analyzing module SYNC_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'sum' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:19]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.REGISTER(N=9)
+Compiling module xil_defaultlib.structural_adder(N=8)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 80 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 40
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2525.664 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER
+INFO: [VRFC 10-311] analyzing module REGISTER_CE
+INFO: [VRFC 10-311] analyzing module REGISTER_R
+INFO: [VRFC 10-311] analyzing module REGISTER_R_CE
+INFO: [VRFC 10-311] analyzing module ASYNC_ROM
+INFO: [VRFC 10-311] analyzing module ASYNC_RAM
+INFO: [VRFC 10-311] analyzing module SYNC_ROM
+INFO: [VRFC 10-311] analyzing module SYNC_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 33 for port 'sum' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v:19]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.REGISTER(N=33)
+Compiling module xil_defaultlib.structural_adder(N=32)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 80 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 40
+xsim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2525.664 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2525.664 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER
+INFO: [VRFC 10-311] analyzing module REGISTER_CE
+INFO: [VRFC 10-311] analyzing module REGISTER_R
+INFO: [VRFC 10-311] analyzing module REGISTER_R_CE
+INFO: [VRFC 10-311] analyzing module ASYNC_ROM
+INFO: [VRFC 10-311] analyzing module ASYNC_RAM
+INFO: [VRFC 10-311] analyzing module SYNC_ROM
+INFO: [VRFC 10-311] analyzing module SYNC_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.REGISTER(N=33)
+Compiling module xil_defaultlib.structural_adder(N=32)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 900 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 30
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 2525.664 ; gain = 0.000
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'structural_adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj structural_adder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER
+INFO: [VRFC 10-311] analyzing module REGISTER_CE
+INFO: [VRFC 10-311] analyzing module REGISTER_R
+INFO: [VRFC 10-311] analyzing module REGISTER_R_CE
+INFO: [VRFC 10-311] analyzing module ASYNC_ROM
+INFO: [VRFC 10-311] analyzing module ASYNC_RAM
+INFO: [VRFC 10-311] analyzing module SYNC_ROM
+INFO: [VRFC 10-311] analyzing module SYNC_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 30fb60b44ebc411cbb373e79f92c4875 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot structural_adder_tb_behav xil_defaultlib.structural_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.REGISTER(N=33)
+Compiling module xil_defaultlib.structural_adder(N=32)
+Compiling module xil_defaultlib.structural_adder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot structural_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "structural_adder_tb_behav -key {Behavioral:sim_1:Functional:structural_adder_tb} -tclbatch {structural_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source structural_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 900 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v" Line 31
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'structural_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2525.664 ; gain = 0.000
+run 10 us

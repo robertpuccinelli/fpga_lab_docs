@@ -1,0 +1,28 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port TMDS_0 -pg 1 -lvl 3 -x 680 -y 140 -defaultsOSRD
+preplace port CLK_125MHZ_FPGA -pg 1 -lvl 0 -x 0 -y 90 -defaultsOSRD
+preplace port FPGA_SERIAL_RX -pg 1 -lvl 0 -x 0 -y 150 -defaultsOSRD
+preplace portBus LEDS -pg 1 -lvl 3 -x 680 -y 20 -defaultsOSRD
+preplace portBus BUTTONS -pg 1 -lvl 0 -x 0 -y 110 -defaultsOSRD
+preplace portBus SWITCHES -pg 1 -lvl 0 -x 0 -y 130 -defaultsOSRD
+preplace inst rgb2dvi_0 -pg 1 -lvl 2 -x 530 -y 140 -defaultsOSRD
+preplace inst z1top_draw_triangle_0 -pg 1 -lvl 1 -x 210 -y 120 -defaultsOSRD
+preplace netloc z1top_draw_triangle_0_pixel_clk 1 1 1 400 80n
+preplace netloc z1top_draw_triangle_0_video_out_pVSync 1 1 1 N 140
+preplace netloc z1top_draw_triangle_0_video_out_pHSync 1 1 1 N 120
+preplace netloc z1top_draw_triangle_0_video_out_pData 1 1 1 N 100
+preplace netloc z1top_draw_triangle_0_video_out_pVDE 1 1 1 N 160
+preplace netloc CLK_125MHZ_FPGA_0_1 1 0 1 NJ 90
+preplace netloc z1top_draw_triangle_0_LEDS 1 1 2 400J 20 NJ
+preplace netloc BUTTONS_0_1 1 0 1 NJ 110
+preplace netloc SWITCHES_0_1 1 0 1 NJ 130
+preplace netloc FPGA_SERIAL_RX_0_1 1 0 1 NJ 150
+preplace netloc rgb2dvi_0_TMDS 1 2 1 NJ 140
+levelinfo -pg 1 0 210 530 680
+pagesize -pg 1 -db -bbox -sgen -190 0 800 260
+"
+}
+0

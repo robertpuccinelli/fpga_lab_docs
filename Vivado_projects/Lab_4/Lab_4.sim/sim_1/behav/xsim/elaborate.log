@@ -1,0 +1,22 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 855ede3e51be4deaa5810b6fc0007643 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_display_tb_behav xil_defaultlib.fifo_display_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SYNC_ROM(AWIDTH=19,DEPTH=480000,...
+Compiling module xil_defaultlib.REGISTER_R_CE(N=19,INIT=0)
+Compiling module xil_defaultlib.REGISTER_R(INIT=0)
+Compiling module xil_defaultlib.pixel_stream
+Compiling module xil_defaultlib.ASYNC_RAM_DP(AWIDTH=10)
+Compiling module xil_defaultlib.REGISTER_R_CE(N=10)
+Compiling module xil_defaultlib.fifo(WIDTH=8,LOGDEPTH=10)
+Compiling module xil_defaultlib.REGISTER_R_CE(N=32,INIT=0)
+Compiling module xil_defaultlib.display_controller_default
+Compiling module xil_defaultlib.fifo_display
+Compiling module xil_defaultlib.fifo_display_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot fifo_display_tb_behav

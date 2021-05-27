@@ -1,0 +1,720 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Mar  1 22:25:24 2021
+# Process ID: 8816
+# Current directory: C:/Users/Robby/Desktop/Lab_4/Lab_4.runs/design_1_z1top_fifo_display_0_0_synth_1
+# Command line: vivado.exe -log design_1_z1top_fifo_display_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_z1top_fifo_display_0_0.tcl
+# Log file: C:/Users/Robby/Desktop/Lab_4/Lab_4.runs/design_1_z1top_fifo_display_0_0_synth_1/design_1_z1top_fifo_display_0_0.vds
+# Journal file: C:/Users/Robby/Desktop/Lab_4/Lab_4.runs/design_1_z1top_fifo_display_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_z1top_fifo_display_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/digilent_ips'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+Command: synth_design -top design_1_z1top_fifo_display_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-3571] IP 'design_1_z1top_fifo_display_0_0' is restricted:
+* Module reference is stale and needs refreshing.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 20468 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 458.172 ; gain = 165.605
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_z1top_fifo_display_0_0' [c:/Users/Robby/Desktop/Lab_4/Lab_4.srcs/sources_1/bd/design_1/ip/design_1_z1top_fifo_display_0_0/synth/design_1_z1top_fifo_display_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'z1top_fifo_display' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/src/z1top_fifo_display.v:3]
+	Parameter B_SAMPLE_CNT_MAX bound to: 20000 - type: integer 
+	Parameter B_PULSE_CNT_MAX bound to: 200 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/src/clk_wiz.v:69]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (1#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
+INFO: [Synth 8-6157] synthesizing module 'PLLE2_ADV' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:61199]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 42 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE bound to: 21 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 5 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'PLLE2_ADV' (2#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:61199]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz' (4#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/src/clk_wiz.v:69]
+INFO: [Synth 8-6157] synthesizing module 'button_parser' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/src/button_parser.v:4]
+	Parameter WIDTH bound to: 4 - type: integer 
+	Parameter SAMPLE_CNT_MAX bound to: 20000 - type: integer 
+	Parameter PULSE_CNT_MAX bound to: 200 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'synchronizer' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/synchronizer.v:3]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'REGISTER' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:27]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER' (5#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'synchronizer' (6#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/synchronizer.v:3]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/debouncer.v:2]
+	Parameter WIDTH bound to: 4 - type: integer 
+	Parameter SAMPLE_CNT_MAX bound to: 20000 - type: integer 
+	Parameter PULSE_CNT_MAX bound to: 200 - type: integer 
+	Parameter WRAPPING_CNT_WIDTH bound to: 16 - type: integer 
+	Parameter SAT_CNT_WIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_R_CE' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:63]
+	Parameter N bound to: 9 - type: integer 
+	Parameter INIT bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_R_CE' (7#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:63]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_R' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:49]
+	Parameter N bound to: 16 - type: integer 
+	Parameter INIT bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_R' (8#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (9#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/debouncer.v:2]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/edge_detector.v:3]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector' (10#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/edge_detector.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'button_parser' (11#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/src/button_parser.v:4]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_R_CE__parameterized0' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:63]
+	Parameter N bound to: 1 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_R_CE__parameterized0' (11#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:63]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_R_CE__parameterized1' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:63]
+	Parameter N bound to: 1 - type: integer 
+	Parameter INIT bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_R_CE__parameterized1' (11#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:63]
+INFO: [Synth 8-6157] synthesizing module 'fifo_display' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/src/fifo_display.v:3]
+	Parameter FIFO_WIDTH bound to: 8 - type: integer 
+	Parameter FIFO_LOGDEPTH bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'pixel_stream' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/src/pixel_stream.v:4]
+	Parameter IMG_ADDR_WIDTH bound to: 19 - type: integer 
+	Parameter IMG_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter IMG_NUM_PIXELS bound to: 480000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'SYNC_ROM' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:187]
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 19 - type: integer 
+	Parameter DEPTH bound to: 480000 - type: integer 
+	Parameter MIF_HEX bound to: (null) - type: string 
+	Parameter MIF_BIN bound to: ucb_wheeler_hall_bin.mif - type: string 
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:199]
+INFO: [Synth 8-3876] $readmem data file 'ucb_wheeler_hall_bin.mif' is read successfully [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:207]
+INFO: [Synth 8-6155] done synthesizing module 'SYNC_ROM' (12#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:187]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_R_CE__parameterized2' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:63]
+	Parameter N bound to: 19 - type: integer 
+	Parameter INIT bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_R_CE__parameterized2' (12#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:63]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_R__parameterized0' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:49]
+	Parameter N bound to: 1 - type: integer 
+	Parameter INIT bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_R__parameterized0' (12#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_stream' (13#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/src/pixel_stream.v:4]
+INFO: [Synth 8-6157] synthesizing module 'fifo' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/src/fifo.v:3]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter LOGDEPTH bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ASYNC_RAM_DP' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:267]
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 10 - type: integer 
+	Parameter DEPTH bound to: 1024 - type: integer 
+	Parameter MIF_HEX bound to: (null) - type: string 
+	Parameter MIF_BIN bound to: (null) - type: string 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:280]
+INFO: [Synth 8-6155] done synthesizing module 'ASYNC_RAM_DP' (14#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:267]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_R_CE__parameterized3' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:63]
+	Parameter N bound to: 10 - type: integer 
+	Parameter INIT bound to: 10'b0000000000 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_R_CE__parameterized3' (14#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'fifo' (15#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/src/fifo.v:3]
+INFO: [Synth 8-6157] synthesizing module 'display_controller' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/src/display_controller.v:4]
+	Parameter H_ACTIVE_VIDEO bound to: 800 - type: integer 
+	Parameter H_FRONT_PORCH bound to: 40 - type: integer 
+	Parameter H_SYNC_WIDTH bound to: 128 - type: integer 
+	Parameter H_BACK_PORCH bound to: 88 - type: integer 
+	Parameter V_ACTIVE_VIDEO bound to: 600 - type: integer 
+	Parameter V_FRONT_PORCH bound to: 1 - type: integer 
+	Parameter V_SYNC_WIDTH bound to: 4 - type: integer 
+	Parameter V_BACK_PORCH bound to: 23 - type: integer 
+	Parameter H_FRAME bound to: 1056 - type: integer 
+	Parameter V_FRAME bound to: 628 - type: integer 
+	Parameter H_SYNC_START bound to: 840 - type: integer 
+	Parameter H_SYNC_END bound to: 968 - type: integer 
+	Parameter V_SYNC_START bound to: 601 - type: integer 
+	Parameter V_SYNC_END bound to: 605 - type: integer 
+	Parameter pre_HSYNC bound to: 840 - type: integer 
+	Parameter pre_VSYNC bound to: 601 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_R_CE__parameterized4' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:63]
+	Parameter N bound to: 32 - type: integer 
+	Parameter INIT bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_R_CE__parameterized4' (15#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'display_controller' (16#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/src/display_controller.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_display' (17#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/src/fifo_display.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'z1top_fifo_display' (18#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/src/z1top_fifo_display.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_z1top_fifo_display_0_0' (19#1) [c:/Users/Robby/Desktop/Lab_4/Lab_4.srcs/sources_1/bd/design_1/ip/design_1_z1top_fifo_display_0_0/synth/design_1_z1top_fifo_display_0_0.v:58]
+WARNING: [Synth 8-3331] design z1top_fifo_display has unconnected port LEDS[5]
+WARNING: [Synth 8-3331] design z1top_fifo_display has unconnected port LEDS[4]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 879.961 ; gain = 587.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 879.961 ; gain = 587.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 879.961 ; gain = 587.395
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7031] Trying to map ROM "mem" into Block RAM due to explicit "ram_style" or "rom_style" specification
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:12 ; elapsed = 00:01:10 . Memory (MB): peak = 1653.832 ; gain = 1361.266
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               19 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 6     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module REGISTER 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module REGISTER_R 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module REGISTER_R_CE 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module debouncer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 4     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 4     
+Module REGISTER_R_CE__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module REGISTER_R_CE__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module SYNC_ROM 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module REGISTER_R_CE__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	               19 Bit    Registers := 1     
+Module REGISTER_R__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module pixel_stream 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+Module REGISTER_R_CE__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+Module fifo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 2     
+Module REGISTER_R_CE__parameterized4 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module display_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+Module z1top_fifo_display 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design design_1_z1top_fifo_display_0_0 has unconnected port LEDS[5]
+WARNING: [Synth 8-3331] design design_1_z1top_fifo_display_0_0 has unconnected port LEDS[4]
+WARNING: [Synth 8-6014] Unused sequential element inst/nolabel_line101/FIFO/buffer/mem_reg was removed. 
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__49' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__54'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__41' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__54'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__33' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__38'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__25' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__54'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__17' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__54'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__9' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__38'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__1' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__6'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__48' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__54'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__40' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__54'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__32' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__38'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__24' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__54'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__16' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__54'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__8' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__38'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__0' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__6'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__47' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__54'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__39' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__54'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__31' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__38'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__23' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__54'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__15' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__54'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__7' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__38'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__6'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__52' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__54'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__44' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__54'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__36' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__38'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__28' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__54'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__20' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__54'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__12' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__38'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__4' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__6'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__51' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__54'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__43' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__54'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__35' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__38'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__27' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__54'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__19' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__54'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__11' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__38'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__3' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__6'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__50' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__54'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__42' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__54'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__34' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__38'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__26' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__54'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__18' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__54'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__10' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__38'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__2' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__6'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__53' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__54'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__45' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__54'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__37' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__38'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__29' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__54'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__21' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__54'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__13' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__38'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__5' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__6'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__54' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__46'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__46' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__30'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__38' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__14'
+INFO: [Synth 8-3886] merging instance 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__30' (FDE) to 'insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_mux_sel__22'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:15 . Memory (MB): peak = 1653.832 ; gain = 1361.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+-------------------+---------------+----------------+
+|Module Name | RTL Object        | Depth x Width | Implemented As | 
++------------+-------------------+---------------+----------------+
+|SYNC_ROM    | read_data_reg_reg | 524288x8      | Block RAM      | 
++------------+-------------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++--------------------------------+------------------------------------------+----------------+----------------------+------------------------------+
+|Module Name                     | RTL Object                               | Inference      | Size (Depth x Width) | Primitives                   | 
++--------------------------------+------------------------------------------+----------------+----------------------+------------------------------+
+|design_1_z1top_fifo_display_0_0 | inst/nolabel_line101/FIFO/buffer/mem_reg | User Attribute | 1 K x 8              | RAM64X1D x 32  RAM64M x 32   | 
++--------------------------------+------------------------------------------+----------------+----------------------+------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_3_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_3_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_3_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_3_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_5_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_5_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_5_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_5_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_5_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_5_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_5_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_5_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_7_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_7_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_7_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_7_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_7_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_7_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_7_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_7_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_9_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_9_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_9_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_9_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_9_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_9_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_9_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_9_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_11_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_11_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_11_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_11_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_11_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_11_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_11_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_11_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_13_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_13_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_13_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_13_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_13_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_13_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_13_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_13_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_15_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_15_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_15_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_15_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_15_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_15_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_15_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance insti_0/inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_15_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:16 . Memory (MB): peak = 1653.832 ; gain = 1361.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++--------------------------------+------------------------------------------+----------------+----------------------+------------------------------+
+|Module Name                     | RTL Object                               | Inference      | Size (Depth x Width) | Primitives                   | 
++--------------------------------+------------------------------------------+----------------+----------------------+------------------------------+
+|design_1_z1top_fifo_display_0_0 | inst/nolabel_line101/FIFO/buffer/mem_reg | User Attribute | 1 K x 8              | RAM64X1D x 32  RAM64M x 32   | 
++--------------------------------+------------------------------------------+----------------+----------------------+------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_3_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_3_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_3_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_3_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_5_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_5_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_5_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_5_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_5_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_5_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_5_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_5_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_7_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_7_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_7_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_7_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_7_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_7_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_7_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_7_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_9_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_9_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_9_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/nolabel_line101/pixel_stream/img_memory/read_data_reg_reg_9_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Common 17-14] Message 'Synth 8-6837' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:22 ; elapsed = 00:01:20 . Memory (MB): peak = 1653.832 ; gain = 1361.266
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6064] Net \inst/nolabel_line101/pixel_stream/img_mem_addr [8] is driving 128 big block pins (URAM, BRAM and DSP loads). Created 13 replicas of its driver. 
+INFO: [Synth 8-6064] Net \inst/nolabel_line101/pixel_stream/img_mem_addr [9] is driving 128 big block pins (URAM, BRAM and DSP loads). Created 13 replicas of its driver. 
+INFO: [Synth 8-6064] Net \inst/nolabel_line101/pixel_stream/img_mem_addr [10] is driving 128 big block pins (URAM, BRAM and DSP loads). Created 13 replicas of its driver. 
+INFO: [Synth 8-6064] Net \inst/nolabel_line101/pixel_stream/img_mem_addr [12] is driving 128 big block pins (URAM, BRAM and DSP loads). Created 13 replicas of its driver. 
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:27 ; elapsed = 00:01:25 . Memory (MB): peak = 1653.832 ; gain = 1361.266
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:27 ; elapsed = 00:01:25 . Memory (MB): peak = 1653.832 ; gain = 1361.266
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:27 ; elapsed = 00:01:25 . Memory (MB): peak = 1653.832 ; gain = 1361.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:27 ; elapsed = 00:01:25 . Memory (MB): peak = 1653.832 ; gain = 1361.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:27 ; elapsed = 00:01:25 . Memory (MB): peak = 1653.832 ; gain = 1361.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:27 ; elapsed = 00:01:25 . Memory (MB): peak = 1653.832 ; gain = 1361.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     2|
+|2     |CARRY4    |    49|
+|3     |LUT1      |    11|
+|4     |LUT2      |    16|
+|5     |LUT3      |    18|
+|6     |LUT4      |    66|
+|7     |LUT5      |    38|
+|8     |LUT6      |   103|
+|9     |MUXF7     |    24|
+|10    |MUXF8     |     8|
+|11    |PLLE2_ADV |     1|
+|12    |RAM64M    |    32|
+|13    |RAM64X1D  |    32|
+|14    |RAMB36E1  |   128|
+|15    |FDRE      |   331|
+|16    |IBUF      |     1|
++------+----------+------+
+
+Report Instance Areas: 
++------+-----------------------------+--------------------------------+------+
+|      |Instance                     |Module                          |Cells |
++------+-----------------------------+--------------------------------+------+
+|1     |top                          |                                |   860|
+|2     |  inst                       |z1top_fifo_display              |   860|
+|3     |    blue_enable_r            |REGISTER_R_CE__parameterized0   |     2|
+|4     |    bp                       |button_parser                   |   140|
+|5     |      button_debouncer       |debouncer                       |   113|
+|6     |        \genblk1[0].sat_cnt  |REGISTER_R_CE                   |    22|
+|7     |        \genblk1[1].sat_cnt  |REGISTER_R_CE_8                 |    22|
+|8     |        \genblk1[2].sat_cnt  |REGISTER_R_CE_9                 |    22|
+|9     |        \genblk1[3].sat_cnt  |REGISTER_R_CE_10                |    22|
+|10    |        wrapping_cnt         |REGISTER_R                      |    25|
+|11    |      button_edge_detector   |edge_detector                   |    15|
+|12    |        edge_detect          |REGISTER_6                      |    11|
+|13    |        last_input           |REGISTER_7                      |     4|
+|14    |      button_synchronizer    |synchronizer                    |    12|
+|15    |        reg_async            |REGISTER                        |     4|
+|16    |        reg_sync             |REGISTER_5                      |     8|
+|17    |    clk_wiz                  |clk_wiz                         |     4|
+|18    |    gray_enable_r            |REGISTER_R_CE__parameterized0_0 |     1|
+|19    |    green_enable_r           |REGISTER_R_CE__parameterized0_1 |     1|
+|20    |    nolabel_line101          |fifo_display                    |   685|
+|21    |      FIFO                   |fifo                            |   218|
+|22    |        buffer               |ASYNC_RAM_DP                    |   124|
+|23    |        read_ptr_reg         |REGISTER_R_CE__parameterized3   |    21|
+|24    |        write_ptr_reg        |REGISTER_R_CE__parameterized3_4 |    37|
+|25    |      display_controller     |display_controller              |   140|
+|26    |        pixel_x              |REGISTER_R_CE__parameterized4   |    69|
+|27    |        pixel_y              |REGISTER_R_CE__parameterized4_3 |    71|
+|28    |      pixel_stream           |pixel_stream                    |   327|
+|29    |        img_memory           |SYNC_ROM                        |   155|
+|30    |        delay_reg            |REGISTER_R__parameterized0      |     2|
+|31    |        pixel_index          |REGISTER_R_CE__parameterized2   |   170|
+|32    |    play_reg                 |REGISTER_R_CE__parameterized1   |     2|
+|33    |    red_enable_r             |REGISTER_R_CE__parameterized0_2 |     1|
++------+-----------------------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:27 ; elapsed = 00:01:25 . Memory (MB): peak = 1653.832 ; gain = 1361.266
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:27 ; elapsed = 00:01:26 . Memory (MB): peak = 1653.832 ; gain = 1361.266
+Synthesis Optimization Complete : Time (s): cpu = 00:01:27 ; elapsed = 00:01:26 . Memory (MB): peak = 1653.832 ; gain = 1361.266
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 274 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1653.832 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 32 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+224 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:35 ; elapsed = 00:01:35 . Memory (MB): peak = 1653.832 ; gain = 1361.266
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1653.832 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Robby/Desktop/Lab_4/Lab_4.runs/design_1_z1top_fifo_display_0_0_synth_1/design_1_z1top_fifo_display_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1653.832 ; gain = 0.000
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1174] Renamed 32 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1653.832 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Robby/Desktop/Lab_4/Lab_4.runs/design_1_z1top_fifo_display_0_0_synth_1/design_1_z1top_fifo_display_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_z1top_fifo_display_0_0_utilization_synth.rpt -pb design_1_z1top_fifo_display_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  1 22:27:17 2021...

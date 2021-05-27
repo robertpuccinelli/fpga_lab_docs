@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../fpga_labs_sp21-main/lib/EECS151.v" \
+"../../../../../fpga_labs_sp21-main/lab3/src/acc_async_read.v" \
+"../../../../../fpga_labs_sp21-main/lab3/sim/acc_async_read_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xa7z020clg400-1I" LaunchTime="1614809350">
+  <File Type="BITSTR-BMM" Name="z1top_calculator_bd.bmm"/>
+  <File Type="ROUTE-PWR" Name="z1top_calculator_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="z1top_calculator.tcl"/>
+  <File Type="OPT-DCP" Name="z1top_calculator_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="z1top_calculator_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="z1top_calculator_reports.tcl"/>
+  <File Type="OPT-DRC" Name="z1top_calculator_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="z1top_calculator.hwdef"/>
+  <File Type="PWROPT-DCP" Name="z1top_calculator_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="z1top_calculator_placed.dcp"/>
+  <File Type="PLACE-IO" Name="z1top_calculator_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="z1top_calculator_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="z1top_calculator_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="z1top_calculator_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="z1top_calculator_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="z1top_calculator.bgn"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="z1top_calculator_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="z1top_calculator.bin"/>
+  <File Type="PHYSOPT-DCP" Name="z1top_calculator_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="z1top_calculator.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="z1top_calculator_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="z1top_calculator_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="z1top_calculator_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="z1top_calculator_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="z1top_calculator_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="z1top_calculator.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="z1top_calculator_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="z1top_calculator.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="z1top_calculator_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="z1top_calculator_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="z1top_calculator.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="z1top_calculator_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="z1top_calculator_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="z1top_calculator_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="z1top_calculator_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="z1top_calculator_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="z1top_calculator_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="z1top_calculator_timing_summary_routed.rpx"/>
+  <File Type="RDI-RDI" Name="z1top_calculator.vdi"/>
+  <File Type="ROUTE-CLK" Name="z1top_calculator_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="z1top_calculator_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="z1top_calculator_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="z1top_calculator_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="z1top_calculator_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="z1top_calculator_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="z1top_calculator.bit"/>
+  <File Type="BITSTR-RBT" Name="z1top_calculator.rbt"/>
+  <File Type="BITSTR-NKY" Name="z1top_calculator.nky"/>
+  <File Type="BG-DRC" Name="z1top_calculator.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../fpga_labs_sp21-main/lib/EECS151.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fpga_labs_sp21-main/lab3/src/acc_async_read.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fpga_labs_sp21-main/lab3/src/acc_sync_read.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fpga_labs_sp21-main/lab3/src/button_parser.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fpga_labs_sp21-main/lab2/src/debouncer.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fpga_labs_sp21-main/lab2/src/edge_detector.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fpga_labs_sp21-main/lab2/src/synchronizer.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fpga_labs_sp21-main/lab3/src/z1top_acc.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fpga_labs_sp21-main/lab3/src/control_unit.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fpga_labs_sp21-main/lab3/src/datapath.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fpga_labs_sp21-main/lab3/src/z1top_calculator.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fpga_labs_sp21-main/lab3/src/register_file.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fpga_labs_sp21-main/lab3/src/z1top_register_file.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fpga_labs_sp21-main/lab3/sim/register_file_tb.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fpga_labs_sp21-main/lab3/src/test_data_async.mif">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fpga_labs_sp21-main/lab3/src/test_data_sync.mif">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fpga_labs_sp21-main/lab3/sim/test_data_sim.mif">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="z1top_acc"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../fpga_labs_sp21-main/lab3/constr/z1top.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

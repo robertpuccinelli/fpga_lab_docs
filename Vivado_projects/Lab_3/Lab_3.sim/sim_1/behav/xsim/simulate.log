@@ -1,0 +1,8 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+At time              8260000, hw_result =    1048576, sw_result =     1048576, done = 1, number of cycles =       1023
+TEST 1 PASSED!
+At time             17284000, hw_result =    1048576, sw_result =     1048576, done = 1, number of cycles =       1023
+TEST 2 PASSED!
+Done!
+$finish called at time : 17384 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab3/sim/acc_async_read_tb.v" Line 108

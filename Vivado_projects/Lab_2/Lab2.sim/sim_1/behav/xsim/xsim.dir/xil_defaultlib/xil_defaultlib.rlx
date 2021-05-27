@@ -1,0 +1,16 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/debouncer_tb.v,1612927637,verilog,,,,debouncer_tb,,,,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v,1613015454,verilog,,,,structural_adder_tb,,,,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/sync_tb.v,1612927637,verilog,,,,sync_tb,,,,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/button_parser.v,1612927638,verilog,,C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/debouncer.v,,button_parser,,,,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/debouncer.v,1612947698,verilog,,C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/debouncer_tb.v,,debouncer,,,,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/edge_detector.v,1612952636,verilog,,C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/edge_detector_tb.v,,edge_detector,,,,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/full_adder.v,1612929312,verilog,,C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v,,full_adder,,,,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v,1613014624,verilog,,C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/structural_adder_tb.v,,structural_adder,,,,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/synchronizer.v,1612945231,verilog,,C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/sim/sync_tb.v,,synchronizer,,,,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/z1top_mode_counter.v,1612927638,verilog,,,,z1top_mode_counter,,,,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v,1612927639,verilog,,C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/structural_adder.v,,ASYNC_RAM;ASYNC_ROM;REGISTER;REGISTER_CE;REGISTER_R;REGISTER_R_CE;SYNC_RAM;SYNC_ROM,,,,,,,,

@@ -1,0 +1,11 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/Robby/Desktop/Lab2/Lab2.sim/sim_1/impl/timing/xsim/z1top_mode_counter_time_impl.v,1612938610,verilog,,C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v,,glbl;z1top_counter,,,,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/button_parser.v,1612927638,verilog,,C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/debouncer.v,,button_parser,,,,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/debouncer.v,1612927638,verilog,,C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/edge_detector.v,,debouncer,,,,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/edge_detector.v,1612927638,verilog,,C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/synchronizer.v,,edge_detector,,,,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/synchronizer.v,1612927638,verilog,,C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/z1top_mode_counter.v,,synchronizer,,,,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/z1top_mode_counter.v,1612927638,verilog,,,,z1top_mode_counter,,,,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v,1612927639,verilog,,C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/button_parser.v,,ASYNC_RAM;ASYNC_ROM;REGISTER;REGISTER_CE;REGISTER_R;REGISTER_R_CE;SYNC_RAM;SYNC_ROM,,,,,,,,

@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../fpga_labs_sp21-main/lab5/src" \
+"../../../../../fpga_labs_sp21-main/lib/EECS151.v" \
+"../../../../../fpga_labs_sp21-main/lab5/src/uart.v" \
+"../../../../../fpga_labs_sp21-main/lab5/src/uart_receiver.v" \
+"../../../../../fpga_labs_sp21-main/lab5/src/uart_transmitter.v" \
+"../../../../../fpga_labs_sp21-main/lab5/sim/echo_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

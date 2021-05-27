@@ -1,0 +1,12 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/Robby/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab3/sim/acc_async_read_tb.v,1612927638,verilog,,,,acc_async_read_tb,,,,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab3/sim/acc_sync_read_tb.v,1614788119,verilog,,,,acc_sync_read_tb,,,,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab3/sim/register_file_tb.v,1612927638,verilog,,,,register_file_tb,,,,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab3/src/acc_async_read.v,1614788836,verilog,,C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab3/sim/acc_async_read_tb.v,,acc_async_read,,,,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab3/src/acc_sync_read.v,1614788916,verilog,,C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab3/sim/acc_sync_read_tb.v,,acc_sync_read,,,,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab3/src/register_file.v,1613609544,verilog,,C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab3/sim/register_file_tb.v,,register_file,,,,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v,1614657640,verilog,,C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab3/src/acc_async_read.v,,ASYNC_RAM;ASYNC_RAM_DP;ASYNC_ROM;REGISTER;REGISTER_CE;REGISTER_R;REGISTER_R_CE;SYNC_RAM;SYNC_RAM_DP;SYNC_ROM,,,,,,,,

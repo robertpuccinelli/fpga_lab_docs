@@ -1,0 +1,449 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Mar  3 14:09:12 2021
+# Process ID: 9932
+# Current directory: C:/Users/Robby/Desktop/Lab_3/Lab_3.runs/synth_1
+# Command line: vivado.exe -log z1top_calculator.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source z1top_calculator.tcl
+# Log file: C:/Users/Robby/Desktop/Lab_3/Lab_3.runs/synth_1/z1top_calculator.vds
+# Journal file: C:/Users/Robby/Desktop/Lab_3/Lab_3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source z1top_calculator.tcl -notrace
+Command: synth_design -top z1top_calculator -part xa7z020clg400-1I
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xa7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xa7z020'
+INFO: [Device 21-403] Loading part xa7z020clg400-1I
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19184 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 706.719 ; gain = 177.062
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'z1top_calculator' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab3/src/z1top_calculator.v:4]
+	Parameter B_SAMPLE_CNT_MAX bound to: 62500 - type: integer 
+	Parameter B_PULSE_CNT_MAX bound to: 200 - type: integer 
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'button_parser' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab3/src/button_parser.v:4]
+	Parameter WIDTH bound to: 4 - type: integer 
+	Parameter SAMPLE_CNT_MAX bound to: 62500 - type: integer 
+	Parameter PULSE_CNT_MAX bound to: 200 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'synchronizer' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/synchronizer.v:3]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'REGISTER' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:27]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER' (1#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'synchronizer' (2#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/synchronizer.v:3]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/debouncer.v:2]
+	Parameter WIDTH bound to: 4 - type: integer 
+	Parameter SAMPLE_CNT_MAX bound to: 62500 - type: integer 
+	Parameter PULSE_CNT_MAX bound to: 200 - type: integer 
+	Parameter WRAPPING_CNT_WIDTH bound to: 17 - type: integer 
+	Parameter SAT_CNT_WIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_R_CE' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:63]
+	Parameter N bound to: 9 - type: integer 
+	Parameter INIT bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_R_CE' (3#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:63]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_R' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:49]
+	Parameter N bound to: 17 - type: integer 
+	Parameter INIT bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_R' (4#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (5#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/debouncer.v:2]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/edge_detector.v:3]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector' (6#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/edge_detector.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'button_parser' (7#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab3/src/button_parser.v:4]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab3/src/datapath.v:3]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_CE' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:38]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_CE' (8#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:38]
+INFO: [Synth 8-6157] synthesizing module 'ASYNC_RAM' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:112]
+	Parameter DWIDTH bound to: 5 - type: integer 
+	Parameter AWIDTH bound to: 5 - type: integer 
+	Parameter DEPTH bound to: 32 - type: integer 
+	Parameter MIF_HEX bound to: (null) - type: string 
+	Parameter MIF_BIN bound to: (null) - type: string 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'ASYNC_RAM' (9#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:112]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (10#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab3/src/datapath.v:3]
+INFO: [Synth 8-6157] synthesizing module 'control_unit' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab3/src/control_unit.v:3]
+	Parameter WIDTH bound to: 5 - type: integer 
+	Parameter STATE_IDLE bound to: 2'b00 
+	Parameter STATE_WRITE bound to: 2'b01 
+	Parameter STATE_READ bound to: 2'b10 
+	Parameter STATE_COMPUTE bound to: 2'b11 
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_R__parameterized0' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:49]
+	Parameter N bound to: 2 - type: integer 
+	Parameter INIT bound to: 2'b00 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_R__parameterized0' (10#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:49]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_R_CE__parameterized0' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:63]
+	Parameter N bound to: 5 - type: integer 
+	Parameter INIT bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_R_CE__parameterized0' (10#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:63]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab3/src/control_unit.v:89]
+INFO: [Synth 8-6155] done synthesizing module 'control_unit' (11#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab3/src/control_unit.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'z1top_calculator' (12#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab3/src/z1top_calculator.v:4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 770.656 ; gain = 241.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 770.656 ; gain = 241.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 770.656 ; gain = 241.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab3/constr/z1top.xdc]
+Finished Parsing XDC File [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab3/constr/z1top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab3/constr/z1top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/z1top_calculator_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/z1top_calculator_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 896.156 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 896.156 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 896.156 ; gain = 366.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xa7z020clg400-1I
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 896.156 ; gain = 366.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 896.156 ; gain = 366.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 896.156 ; gain = 366.500
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 3     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                9 Bit    Registers := 4     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 5     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module REGISTER 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module REGISTER_R 
+Detailed RTL Component Info : 
++---Registers : 
+	               17 Bit    Registers := 1     
+Module REGISTER_R_CE 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module debouncer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 4     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 4     
+Module REGISTER_CE 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+Module datapath 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 3     
+Module REGISTER_R__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module REGISTER_R_CE__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+Module control_unit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 896.156 ; gain = 366.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++-----------------+---------------------+----------------+----------------------+----------------+
+|Module Name      | RTL Object          | Inference      | Size (Depth x Width) | Primitives     | 
++-----------------+---------------------+----------------+----------------------+----------------+
+|z1top_calculator | DATAPATH/RF/mem_reg | User Attribute | 32 x 5               | RAM32X1S x 5   | 
++-----------------+---------------------+----------------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 896.156 ; gain = 366.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 896.156 ; gain = 366.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++-----------------+---------------------+----------------+----------------------+----------------+
+|Module Name      | RTL Object          | Inference      | Size (Depth x Width) | Primitives     | 
++-----------------+---------------------+----------------+----------------------+----------------+
+|z1top_calculator | DATAPATH/RF/mem_reg | User Attribute | 32 x 5               | RAM32X1S x 5   | 
++-----------------+---------------------+----------------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 896.156 ; gain = 366.500
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 901.504 ; gain = 371.848
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 901.504 ; gain = 371.848
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 901.504 ; gain = 371.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 901.504 ; gain = 371.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 901.504 ; gain = 371.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 901.504 ; gain = 371.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    13|
+|3     |LUT1     |     6|
+|4     |LUT2     |    12|
+|5     |LUT3     |    14|
+|6     |LUT4     |    27|
+|7     |LUT5     |    21|
+|8     |LUT6     |    35|
+|9     |RAM32X1S |     5|
+|10    |FDRE     |   130|
+|11    |IBUF     |     7|
+|12    |OBUF     |     6|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------------------------+------------------------------+------+
+|      |Instance                   |Module                        |Cells |
++------+---------------------------+------------------------------+------+
+|1     |top                        |                              |   277|
+|2     |  CONTROL_UNIT             |control_unit                  |    89|
+|3     |    keypad_reg             |REGISTER_R_CE__parameterized0 |    15|
+|4     |    state_reg              |REGISTER_R__parameterized0    |    14|
+|5     |  DATAPATH                 |datapath                      |    33|
+|6     |    RF                     |ASYNC_RAM                     |     7|
+|7     |    mem_addr_reg           |REGISTER_CE                   |     5|
+|8     |    op_a_reg               |REGISTER_CE_6                 |     6|
+|9     |    op_b_reg               |REGISTER_CE_7                 |    10|
+|10    |    result_reg             |REGISTER_CE_8                 |     5|
+|11    |  bp                       |button_parser                 |   141|
+|12    |    button_debouncer       |debouncer                     |   117|
+|13    |      \genblk1[0].sat_cnt  |REGISTER_R_CE                 |    22|
+|14    |      \genblk1[1].sat_cnt  |REGISTER_R_CE_3               |    22|
+|15    |      \genblk1[2].sat_cnt  |REGISTER_R_CE_4               |    22|
+|16    |      \genblk1[3].sat_cnt  |REGISTER_R_CE_5               |    22|
+|17    |      wrapping_cnt         |REGISTER_R                    |    29|
+|18    |    button_edge_detector   |edge_detector                 |    12|
+|19    |      edge_detect          |REGISTER_1                    |     8|
+|20    |      last_input           |REGISTER_2                    |     4|
+|21    |    button_synchronizer    |synchronizer                  |    12|
+|22    |      reg_async            |REGISTER                      |     4|
+|23    |      reg_sync             |REGISTER_0                    |     8|
++------+---------------------------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 901.504 ; gain = 371.848
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 901.504 ; gain = 246.348
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 901.504 ; gain = 371.848
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 913.402 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  RAM32X1S => RAM32X1S (RAMS32): 5 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 913.402 ; gain = 622.422
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 913.402 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Robby/Desktop/Lab_3/Lab_3.runs/synth_1/z1top_calculator.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file z1top_calculator_utilization_synth.rpt -pb z1top_calculator_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar  3 14:09:50 2021...

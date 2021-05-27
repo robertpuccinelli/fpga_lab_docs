@@ -1,0 +1,148 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Feb 10 16:36:24 2021
+# Process ID: 17492
+# Current directory: C:/Users/Robby/Desktop/Lab2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2856 C:\Users\Robby\Desktop\Lab2\Lab2.xpr
+# Log file: C:/Users/Robby/Desktop/Lab2/vivado.log
+# Journal file: C:/Users/Robby/Desktop/Lab2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Robby/Desktop/Lab2/Lab2.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top z1top_adder [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+open_run impl_1
+close_design
+synth_design -rtl -name rtl_1
+close_design
+open_run synth_1 -name synth_1
+open_run impl_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+synth_design -rtl -name rtl_1
+current_design impl_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+current_design synth_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top structural_adder_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source structural_adder_tb.tcl
+run 10 us
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source structural_adder_tb.tcl
+run 10 us
+close_sim
+launch_simulation
+source structural_adder_tb.tcl
+close_sim
+launch_simulation
+source structural_adder_tb.tcl
+close_sim
+launch_simulation
+source structural_adder_tb.tcl
+run 10 us
+close_sim
+launch_simulation
+source structural_adder_tb.tcl
+close_sim
+launch_simulation
+source structural_adder_tb.tcl
+run 10 us
+close_sim
+launch_simulation
+source structural_adder_tb.tcl
+close_sim
+launch_simulation
+source structural_adder_tb.tcl
+run all
+close_sim
+launch_simulation
+source structural_adder_tb.tcl
+close_sim
+launch_simulation
+source structural_adder_tb.tcl
+close_sim
+launch_simulation
+source structural_adder_tb.tcl
+run 10 us
+close_sim
+launch_simulation
+source structural_adder_tb.tcl
+close_sim
+launch_simulation
+source structural_adder_tb.tcl
+close_sim
+launch_simulation
+source structural_adder_tb.tcl
+close_sim
+launch_simulation
+source structural_adder_tb.tcl
+close_sim
+launch_simulation
+source structural_adder_tb.tcl
+reset_run synth_1
+close_sim
+launch_simulation
+source structural_adder_tb.tcl
+run 10 us
+close_sim
+launch_simulation
+source structural_adder_tb.tcl
+close_sim
+launch_simulation
+source structural_adder_tb.tcl
+run 10 us
+close_sim
+launch_simulation
+source structural_adder_tb.tcl
+close_sim
+launch_simulation
+source structural_adder_tb.tcl
+close_sim
+launch_simulation
+source structural_adder_tb.tcl
+close_sim
+launch_simulation
+source structural_adder_tb.tcl
+close_sim
+launch_simulation
+source structural_adder_tb.tcl
+close_sim
+launch_simulation
+source structural_adder_tb.tcl
+run 10 us
+close_sim
+launch_simulation
+source structural_adder_tb.tcl
+run 10 us

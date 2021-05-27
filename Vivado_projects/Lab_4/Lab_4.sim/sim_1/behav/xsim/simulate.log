@@ -1,0 +1,4 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Done after     663179 cycles! Tests passed!
+$finish called at time : 15916452 ns : File "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/sim/fifo_display_tb.v" Line 153

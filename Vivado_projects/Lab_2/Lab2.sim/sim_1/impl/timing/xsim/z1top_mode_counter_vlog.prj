@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"z1top_mode_counter_time_impl.v" \
+"../../../../../../fpga_labs_sp21-main/lib/EECS151.v" \
+"../../../../../../fpga_labs_sp21-main/lab2/src/button_parser.v" \
+"../../../../../../fpga_labs_sp21-main/lab2/src/debouncer.v" \
+"../../../../../../fpga_labs_sp21-main/lab2/src/edge_detector.v" \
+"../../../../../../fpga_labs_sp21-main/lab2/src/synchronizer.v" \
+"../../../../../../fpga_labs_sp21-main/lab2/src/z1top_mode_counter.v" \
+
+# Do not sort compile order
+nosort

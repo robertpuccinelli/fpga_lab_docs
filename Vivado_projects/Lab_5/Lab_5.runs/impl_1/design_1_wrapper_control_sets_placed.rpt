@@ -1,0 +1,97 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Wed Mar 10 10:18:45 2021
+| Host         : think running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+| Design       : design_1_wrapper
+| Device       : xc7z020
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    19 |
+|    Minimum number of control sets                        |    19 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    65 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    19 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     3 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     9 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            1276 |          455 |
+| No           | No                    | Yes                    |               6 |            2 |
+| No           | Yes                   | No                     |              91 |           32 |
+| Yes          | No                    | No                     |              13 |            4 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             197 |           50 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------------------------+-----------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+------------------+----------------+
+|                       Clock Signal                      |                                Enable Signal                                |                                      Set/Reset Signal                                      | Slice Load Count | Bel Load Count |
++---------------------------------------------------------+-----------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+------------------+----------------+
+|  design_1_i/z1top_draw_triangle_0/inst/clk_wiz/clk_out1 |                                                                             | design_1_i/rgb2dvi_0/U0/ClockGenInternal.ClockGenX/in0                                     |                1 |              2 |
+|  design_1_i/z1top_draw_triangle_0/inst/clk_wiz/clk_out1 |                                                                             | design_1_i/rgb2dvi_0/U0/ClockGenInternal.ClockGenX/LockLostReset/SyncAsyncx/oSyncStages[1] |                1 |              4 |
+|  design_1_i/z1top_draw_triangle_0/inst/clk_wiz/clk_out1 | design_1_i/z1top_draw_triangle_0/inst/uart_rx/clock_counter/q_reg[3]_0[0]   | design_1_i/z1top_draw_triangle_0/inst/uart_rx/clock_counter/SR[0]                          |                1 |              4 |
+|  design_1_i/z1top_draw_triangle_0/inst/clk_wiz/clk_out1 | design_1_i/z1top_draw_triangle_0/inst/uart_rx/rx_shift/E[0]                 |                                                                                            |                2 |              4 |
+|  design_1_i/z1top_draw_triangle_0/inst/clk_wiz/clk_out1 | design_1_i/z1top_draw_triangle_0/inst/uart_tx/clock_counter/SR[0]           | design_1_i/z1top_draw_triangle_0/inst/uart_tx/bit_counter_reg/SR[0]                        |                1 |              4 |
+|  design_1_i/z1top_draw_triangle_0/inst/clk_wiz/clk_out1 | design_1_i/z1top_draw_triangle_0/inst/bp/button_debouncer/wrapping_cnt/E[0] | design_1_i/z1top_draw_triangle_0/inst/bp/button_synchronizer/reg_sync/SR[0]                |                2 |              9 |
+|  design_1_i/z1top_draw_triangle_0/inst/clk_wiz/clk_out1 | design_1_i/z1top_draw_triangle_0/inst/uart_rx/clock_counter/E[0]            |                                                                                            |                2 |              9 |
+|  design_1_i/z1top_draw_triangle_0/inst/clk_wiz/clk_out1 |                                                                             | design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/pDataOutRaw[9]_i_1__1_n_0              |                4 |             10 |
+|  design_1_i/z1top_draw_triangle_0/inst/clk_wiz/clk_out1 | design_1_i/z1top_draw_triangle_0/inst/uart_rx/start_reg/q_reg[0]_0[0]       | design_1_i/z1top_draw_triangle_0/inst/uart_rx/clock_counter/clock_counter_rst              |                3 |             10 |
+|  design_1_i/z1top_draw_triangle_0/inst/clk_wiz/clk_out1 | design_1_i/z1top_draw_triangle_0/inst/uart_tx/state_reg/q_reg[0]_0[0]       | design_1_i/z1top_draw_triangle_0/inst/uart_tx/clock_counter/SR[0]                          |                3 |             10 |
+|  design_1_i/z1top_draw_triangle_0/inst/clk_wiz/clk_out1 |                                                                             | design_1_i/z1top_draw_triangle_0/inst/bp/button_debouncer/wrapping_cnt/wrapping_cnt_rst    |                5 |             17 |
+|  design_1_i/z1top_draw_triangle_0/inst/clk_wiz/clk_out1 |                                                                             | design_1_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/SR[0]                                  |               15 |             32 |
+|  design_1_i/z1top_draw_triangle_0/inst/clk_wiz/clk_out1 |                                                                             | design_1_i/z1top_draw_triangle_0/inst/draw_triangle/pixel_x_reg/pixel_x_rst                |                8 |             32 |
+|  design_1_i/z1top_draw_triangle_0/inst/clk_wiz/clk_out1 | design_1_i/z1top_draw_triangle_0/inst/draw_triangle/pixel_x_reg/pixel_x_rst | design_1_i/z1top_draw_triangle_0/inst/draw_triangle/pixel_y_reg/pixel_y_rst                |                8 |             32 |
+|  design_1_i/z1top_draw_triangle_0/inst/clk_wiz/clk_out1 | design_1_i/z1top_draw_triangle_0/inst/uart_rx/rx_shift/D[2]                 | design_1_i/z1top_draw_triangle_0/inst/bp/button_edge_detector/edge_detect/reset            |                8 |             32 |
+|  design_1_i/z1top_draw_triangle_0/inst/clk_wiz/clk_out1 | design_1_i/z1top_draw_triangle_0/inst/uart_rx/rx_shift/sel                  | design_1_i/z1top_draw_triangle_0/inst/bp/button_edge_detector/edge_detect/reset            |                8 |             32 |
+|  design_1_i/z1top_draw_triangle_0/inst/clk_wiz/clk_out1 | design_1_i/z1top_draw_triangle_0/inst/uart_rx/rx_shift/D[1]                 | design_1_i/z1top_draw_triangle_0/inst/bp/button_edge_detector/edge_detect/reset            |                8 |             32 |
+|  design_1_i/z1top_draw_triangle_0/inst/clk_wiz/clk_out1 | design_1_i/z1top_draw_triangle_0/inst/uart_rx/rx_shift/D[0]                 | design_1_i/z1top_draw_triangle_0/inst/bp/button_edge_detector/edge_detect/reset            |                8 |             32 |
+|  design_1_i/z1top_draw_triangle_0/inst/clk_wiz/clk_out1 |                                                                             |                                                                                            |              455 |           1276 |
++---------------------------------------------------------+-----------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+------------------+----------------+
+
+

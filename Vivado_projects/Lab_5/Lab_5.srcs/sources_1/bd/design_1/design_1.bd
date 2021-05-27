@@ -1,0 +1,179 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x9F75E365A31D12AE",
+      "device": "xc7z020clg400-1",
+      "name": "design_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "rgb2dvi_0": "",
+      "z1top_draw_triangle_0": ""
+    },
+    "interface_ports": {
+      "TMDS_0": {
+        "mode": "Master",
+        "vlnv": "digilentinc.com:interface:tmds_rtl:1.0"
+      }
+    },
+    "ports": {
+      "CLK_125MHZ_FPGA": {
+        "direction": "I"
+      },
+      "LEDS": {
+        "direction": "O",
+        "left": "5",
+        "right": "0"
+      },
+      "BUTTONS": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "SWITCHES": {
+        "direction": "I",
+        "left": "1",
+        "right": "0"
+      },
+      "FPGA_SERIAL_RX": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "rgb2dvi_0": {
+        "vlnv": "digilentinc.com:ip:rgb2dvi:1.4",
+        "xci_name": "design_1_rgb2dvi_0_0",
+        "parameters": {
+          "kClkRange": {
+            "value": "3"
+          }
+        }
+      },
+      "z1top_draw_triangle_0": {
+        "vlnv": "xilinx.com:module_ref:z1top_draw_triangle:1.0",
+        "xci_name": "design_1_z1top_draw_triangle_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "z1top_draw_triangle",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "pixel_clk": {
+            "type": "clk",
+            "direction": "O"
+          },
+          "CLK_125MHZ_FPGA": {
+            "direction": "I"
+          },
+          "BUTTONS": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "SWITCHES": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "LEDS": {
+            "direction": "O",
+            "left": "5",
+            "right": "0"
+          },
+          "video_out_pData": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          },
+          "video_out_pHSync": {
+            "direction": "O"
+          },
+          "video_out_pVSync": {
+            "direction": "O"
+          },
+          "video_out_pVDE": {
+            "direction": "O"
+          },
+          "FPGA_SERIAL_RX": {
+            "direction": "I"
+          },
+          "FPGA_SERIAL_TX": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "rgb2dvi_0_TMDS": {
+        "interface_ports": [
+          "TMDS_0",
+          "rgb2dvi_0/TMDS"
+        ]
+      }
+    },
+    "nets": {
+      "z1top_draw_triangle_0_pixel_clk": {
+        "ports": [
+          "z1top_draw_triangle_0/pixel_clk",
+          "rgb2dvi_0/PixelClk"
+        ]
+      },
+      "z1top_draw_triangle_0_video_out_pVSync": {
+        "ports": [
+          "z1top_draw_triangle_0/video_out_pVSync",
+          "rgb2dvi_0/vid_pVSync"
+        ]
+      },
+      "z1top_draw_triangle_0_video_out_pHSync": {
+        "ports": [
+          "z1top_draw_triangle_0/video_out_pHSync",
+          "rgb2dvi_0/vid_pHSync"
+        ]
+      },
+      "z1top_draw_triangle_0_video_out_pData": {
+        "ports": [
+          "z1top_draw_triangle_0/video_out_pData",
+          "rgb2dvi_0/vid_pData"
+        ]
+      },
+      "z1top_draw_triangle_0_video_out_pVDE": {
+        "ports": [
+          "z1top_draw_triangle_0/video_out_pVDE",
+          "rgb2dvi_0/vid_pVDE"
+        ]
+      },
+      "CLK_125MHZ_FPGA_0_1": {
+        "ports": [
+          "CLK_125MHZ_FPGA",
+          "z1top_draw_triangle_0/CLK_125MHZ_FPGA"
+        ]
+      },
+      "z1top_draw_triangle_0_LEDS": {
+        "ports": [
+          "z1top_draw_triangle_0/LEDS",
+          "LEDS"
+        ]
+      },
+      "BUTTONS_0_1": {
+        "ports": [
+          "BUTTONS",
+          "z1top_draw_triangle_0/BUTTONS"
+        ]
+      },
+      "SWITCHES_0_1": {
+        "ports": [
+          "SWITCHES",
+          "z1top_draw_triangle_0/SWITCHES"
+        ]
+      },
+      "FPGA_SERIAL_RX_0_1": {
+        "ports": [
+          "FPGA_SERIAL_RX",
+          "z1top_draw_triangle_0/FPGA_SERIAL_RX"
+        ]
+      }
+    }
+  }
+}

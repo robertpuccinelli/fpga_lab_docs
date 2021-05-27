@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/src/fifo_display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/src/pixel_stream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_stream
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/sim/fifo_display_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_display_tb

@@ -1,0 +1,818 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Mar  7 17:16:04 2021
+# Process ID: 17372
+# Current directory: C:/Users/Robby/Desktop/Lab_5/Lab_5.runs/design_1_z1top_draw_triangle_0_0_synth_1
+# Command line: vivado.exe -log design_1_z1top_draw_triangle_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_z1top_draw_triangle_0_0.tcl
+# Log file: C:/Users/Robby/Desktop/Lab_5/Lab_5.runs/design_1_z1top_draw_triangle_0_0_synth_1/design_1_z1top_draw_triangle_0_0.vds
+# Journal file: C:/Users/Robby/Desktop/Lab_5/Lab_5.runs/design_1_z1top_draw_triangle_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_z1top_draw_triangle_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Robby/Desktop/fpga_labs_sp21-main/lab5/digilent_ips'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+Command: synth_design -top design_1_z1top_draw_triangle_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-3571] IP 'design_1_z1top_draw_triangle_0_0' is restricted:
+* Module reference is stale and needs refreshing.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7756 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 459.211 ; gain = 166.137
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_z1top_draw_triangle_0_0' [c:/Users/Robby/Desktop/Lab_5/Lab_5.srcs/sources_1/bd/design_1/ip/design_1_z1top_draw_triangle_0_0/synth/design_1_z1top_draw_triangle_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'z1top_draw_triangle' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab5/src/z1top_draw_triangle.v:3]
+	Parameter PIXEL_CLK_PERIOD bound to: 14 - type: integer 
+	Parameter PIXEL_CLK_FREQ bound to: 71428571 - type: integer 
+	Parameter B_SAMPLE_CNT_MAX bound to: 35714 - type: integer 
+	Parameter B_PULSE_CNT_MAX bound to: 200 - type: integer 
+	Parameter X0 bound to: 500 - type: integer 
+	Parameter Y0 bound to: 50 - type: integer 
+	Parameter X1 bound to: 100 - type: integer 
+	Parameter Y1 bound to: 400 - type: integer 
+	Parameter X2 bound to: 700 - type: integer 
+	Parameter Y2 bound to: 300 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab5/src/clk_wiz.v:58]
+	Parameter CLKIN1_PERIOD bound to: 8 - type: integer 
+	Parameter CLKFBOUT_MULT_F bound to: 8 - type: integer 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT0_DIVIDE bound to: 14 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (1#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
+INFO: [Synth 8-6157] synthesizing module 'PLLE2_ADV' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:61199]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 8 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 8.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE bound to: 14 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'PLLE2_ADV' (2#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:61199]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz' (4#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab5/src/clk_wiz.v:58]
+INFO: [Synth 8-6157] synthesizing module 'button_parser' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/button_parser.v:4]
+	Parameter WIDTH bound to: 4 - type: integer 
+	Parameter SAMPLE_CNT_MAX bound to: 35714 - type: integer 
+	Parameter PULSE_CNT_MAX bound to: 200 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'synchronizer' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/synchronizer.v:3]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'REGISTER' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:27]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER' (5#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'synchronizer' (6#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/synchronizer.v:3]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/debouncer.v:2]
+	Parameter WIDTH bound to: 4 - type: integer 
+	Parameter SAMPLE_CNT_MAX bound to: 35714 - type: integer 
+	Parameter PULSE_CNT_MAX bound to: 200 - type: integer 
+	Parameter WRAPPING_CNT_WIDTH bound to: 17 - type: integer 
+	Parameter SAT_CNT_WIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_R_CE' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:63]
+	Parameter N bound to: 9 - type: integer 
+	Parameter INIT bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_R_CE' (7#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:63]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_R' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:49]
+	Parameter N bound to: 17 - type: integer 
+	Parameter INIT bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_R' (8#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (9#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/debouncer.v:2]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/edge_detector.v:3]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector' (10#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/edge_detector.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'button_parser' (11#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab2/src/button_parser.v:4]
+INFO: [Synth 8-6157] synthesizing module 'uart_receiver' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab5/src/uart_receiver.v:2]
+	Parameter CLOCK_FREQ bound to: 71428571 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter SYMBOL_EDGE_TIME bound to: 620 - type: integer 
+	Parameter SAMPLE_TIME bound to: 310 - type: integer 
+	Parameter CLOCK_COUNTER_WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_CE' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:38]
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_CE' (12#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:38]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_R_CE__parameterized0' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:63]
+	Parameter N bound to: 4 - type: integer 
+	Parameter INIT bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_R_CE__parameterized0' (12#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:63]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_R_CE__parameterized1' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:63]
+	Parameter N bound to: 10 - type: integer 
+	Parameter INIT bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_R_CE__parameterized1' (12#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:63]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_R_CE__parameterized2' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:63]
+	Parameter N bound to: 1 - type: integer 
+	Parameter INIT bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_R_CE__parameterized2' (12#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'uart_receiver' (13#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab5/src/uart_receiver.v:2]
+INFO: [Synth 8-6157] synthesizing module 'uart_transmitter' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab5/src/uart_transmitter.v:2]
+	Parameter CLOCK_FREQ bound to: 71428571 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter SYMBOL_EDGE_TIME bound to: 620 - type: integer 
+	Parameter CLOCK_COUNTER_WIDTH bound to: 10 - type: integer 
+	Parameter STATE_IDLE bound to: 1'b0 
+	Parameter STATE_SHIFT bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_R__parameterized0' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:49]
+	Parameter N bound to: 1 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_R__parameterized0' (13#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'uart_transmitter' (14#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab5/src/uart_transmitter.v:2]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_CE__parameterized0' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:38]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_CE__parameterized0' (14#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:38]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_R_CE__parameterized3' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:63]
+	Parameter N bound to: 32 - type: integer 
+	Parameter INIT bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_R_CE__parameterized3' (14#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:63]
+INFO: [Synth 8-6157] synthesizing module 'draw_triangle' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab5/src/draw_triangle.v:3]
+	Parameter H_ACTIVE_VIDEO bound to: 1280 - type: integer 
+	Parameter H_FRONT_PORCH bound to: 110 - type: integer 
+	Parameter H_SYNC_WIDTH bound to: 40 - type: integer 
+	Parameter H_BACK_PORCH bound to: 220 - type: integer 
+	Parameter V_ACTIVE_VIDEO bound to: 720 - type: integer 
+	Parameter V_FRONT_PORCH bound to: 5 - type: integer 
+	Parameter V_SYNC_WIDTH bound to: 5 - type: integer 
+	Parameter V_BACK_PORCH bound to: 20 - type: integer 
+	Parameter H_FRAME bound to: 1650 - type: integer 
+	Parameter V_FRAME bound to: 750 - type: integer 
+	Parameter H_SYNC_START bound to: 1390 - type: integer 
+	Parameter H_SYNC_END bound to: 1430 - type: integer 
+	Parameter V_SYNC_START bound to: 725 - type: integer 
+	Parameter V_SYNC_END bound to: 730 - type: integer 
+	Parameter pre_HSYNC bound to: 1390 - type: integer 
+	Parameter pre_VSYNC bound to: 725 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'inside_test' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab5/src/inside_test.v:29]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER__parameterized0' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:27]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER__parameterized0' (14#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:27]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER__parameterized1' [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:27]
+	Parameter N bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER__parameterized1' (14#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'inside_test' (15#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab5/src/inside_test.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'draw_triangle' (16#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab5/src/draw_triangle.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'z1top_draw_triangle' (17#1) [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab5/src/z1top_draw_triangle.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_z1top_draw_triangle_0_0' (18#1) [c:/Users/Robby/Desktop/Lab_5/Lab_5.srcs/sources_1/bd/design_1/ip/design_1_z1top_draw_triangle_0_0/synth/design_1_z1top_draw_triangle_0_0.v:58]
+WARNING: [Synth 8-3331] design z1top_draw_triangle has unconnected port LEDS[5]
+WARNING: [Synth 8-3331] design z1top_draw_triangle has unconnected port LEDS[4]
+WARNING: [Synth 8-3331] design z1top_draw_triangle has unconnected port SWITCHES[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 521.398 ; gain = 228.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 521.398 ; gain = 228.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 521.398 ; gain = 228.324
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 694.703 ; gain = 401.629
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/draw_triangle/inside_test/pixel_x_reg_val0' (REGISTER__parameterized0) to 'inst/draw_triangle/inside_test/pixel_x_reg1'
+INFO: [Synth 8-223] decloning instance 'inst/draw_triangle/inside_test/pixel_y_reg_val0' (REGISTER__parameterized0) to 'inst/draw_triangle/inside_test/pixel_y_reg1'
+
+Report RTL Partitions: 
++------+-------------------------+------------+----------+
+|      |RTL Partition            |Replication |Instances |
++------+-------------------------+------------+----------+
+|1     |clk_wiz__GC0             |           1|         3|
+|2     |inside_test__GB0         |           1|     18497|
+|3     |inside_test__GB1         |           1|     17809|
+|4     |inside_test__GB2         |           1|     18766|
+|5     |draw_triangle__GC0       |           1|       697|
+|6     |z1top_draw_triangle__GC0 |           1|      2451|
++------+-------------------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 18    
+	   2 Input     32 Bit       Adders := 8     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 44    
+	               17 Bit    Registers := 1     
+	               10 Bit    Registers := 4     
+	                9 Bit    Registers := 4     
+	                4 Bit    Registers := 7     
+	                1 Bit    Registers := 4     
++---Multipliers : 
+	                32x32  Multipliers := 12    
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module REGISTER__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module REGISTER__parameterized0__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__2 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__3 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__4 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__5 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__6 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__7 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__8 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__9 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__10 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__11 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__12 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__13 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__14 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__15 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__16 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__17 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__18 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__19 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__20 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__21 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__22 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__23 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__24 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__25 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__26 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__27 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__28 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__29 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__30 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__31 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__32 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__33 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__34 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__35 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__36 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0__37 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module inside_test 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 12    
++---Multipliers : 
+	                32x32  Multipliers := 12    
+Module REGISTER_R_CE__parameterized3__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER_R_CE__parameterized3__2 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module draw_triangle 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+Module REGISTER__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module REGISTER 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module REGISTER_R 
+Detailed RTL Component Info : 
++---Registers : 
+	               17 Bit    Registers := 1     
+Module REGISTER_R_CE__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module REGISTER_R_CE__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module REGISTER_R_CE__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module REGISTER_R_CE 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module debouncer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 4     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 4     
+Module REGISTER__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module REGISTER__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module REGISTER_CE 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+Module REGISTER_R_CE__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module REGISTER_R_CE__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+Module REGISTER_R_CE__parameterized2__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module REGISTER_R_CE__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module uart_receiver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+Module REGISTER_CE__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+Module REGISTER_R_CE__parameterized0__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module REGISTER_R_CE__parameterized1__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+Module REGISTER_R__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module uart_transmitter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module REGISTER_CE__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module REGISTER_R_CE__parameterized3__3 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER_R_CE__parameterized3__4 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER_R_CE__parameterized3__5 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module REGISTER_R_CE__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module z1top_draw_triangle 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 6     
+	   2 Input     32 Bit       Adders := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3936] Found unconnected internal register 'bp/button_edge_detector/edge_detect/q_reg' and it is trimmed from '4' to '1' bits. [C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v:34]
+INFO: [Synth 8-3917] design design_1_z1top_draw_triangle_0_0 has port video_out_pData[7] driven by constant 0
+INFO: [Synth 8-3917] design design_1_z1top_draw_triangle_0_0 has port video_out_pData[6] driven by constant 0
+INFO: [Synth 8-3917] design design_1_z1top_draw_triangle_0_0 has port video_out_pData[5] driven by constant 0
+INFO: [Synth 8-3917] design design_1_z1top_draw_triangle_0_0 has port video_out_pData[4] driven by constant 0
+INFO: [Synth 8-3917] design design_1_z1top_draw_triangle_0_0 has port video_out_pData[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_z1top_draw_triangle_0_0 has port video_out_pData[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_z1top_draw_triangle_0_0 has port video_out_pData[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_z1top_draw_triangle_0_0 has port video_out_pData[0] driven by constant 0
+WARNING: [Synth 8-3331] design design_1_z1top_draw_triangle_0_0 has unconnected port LEDS[5]
+WARNING: [Synth 8-3331] design design_1_z1top_draw_triangle_0_0 has unconnected port LEDS[4]
+WARNING: [Synth 8-3331] design design_1_z1top_draw_triangle_0_0 has unconnected port SWITCHES[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:33 . Memory (MB): peak = 736.723 ; gain = 443.648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------------+------------+----------+
+|      |RTL Partition            |Replication |Instances |
++------+-------------------------+------------+----------+
+|1     |clk_wiz__GC0             |           1|         3|
+|2     |inside_test__GB0         |           1|     10066|
+|3     |inside_test__GB1         |           1|      9747|
+|4     |inside_test__GB2         |           1|     10539|
+|5     |draw_triangle__GC0       |           1|       297|
+|6     |z1top_draw_triangle__GC0 |           1|       755|
++------+-------------------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:34 . Memory (MB): peak = 743.957 ; gain = 450.883
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------------+------------+----------+
+|      |RTL Partition            |Replication |Instances |
++------+-------------------------+------------+----------+
+|1     |clk_wiz__GC0             |           1|         3|
+|2     |inside_test__GB0         |           1|     10066|
+|3     |inside_test__GB1         |           1|      9747|
+|4     |inside_test__GB2         |           1|     10539|
+|5     |draw_triangle__GC0       |           1|       297|
+|6     |z1top_draw_triangle__GC0 |           1|       755|
++------+-------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'inst/draw_triangle/inside_test/y0_reg0/q_reg[0]' (FD) to 'inst/draw_triangle/inside_test/y1_reg0/q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/draw_triangle/inside_test/x2_reg0/q_reg[0]' (FD) to 'inst/draw_triangle/inside_test/x1_reg0/q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/draw_triangle/inside_test/y1_reg1/q_reg[0]' (FD) to 'inst/draw_triangle/inside_test/y0_reg1/q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/draw_triangle/inside_test/x2_reg1/q_reg[0]' (FD) to 'inst/draw_triangle/inside_test/x1_reg1/q_reg[0]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:36 . Memory (MB): peak = 752.109 ; gain = 459.035
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:39 . Memory (MB): peak = 752.109 ; gain = 459.035
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:39 . Memory (MB): peak = 752.109 ; gain = 459.035
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:40 . Memory (MB): peak = 752.109 ; gain = 459.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:40 . Memory (MB): peak = 752.109 ; gain = 459.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:40 . Memory (MB): peak = 752.109 ; gain = 459.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:40 . Memory (MB): peak = 752.109 ; gain = 459.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     2|
+|2     |CARRY4    |  1113|
+|3     |LUT1      |   109|
+|4     |LUT2      |  2612|
+|5     |LUT3      |   804|
+|6     |LUT4      |  1438|
+|7     |LUT5      |   169|
+|8     |LUT6      |  3890|
+|9     |PLLE2_ADV |     1|
+|10    |FDRE      |  1489|
+|11    |IBUF      |     1|
++------+----------+------+
+
+Report Instance Areas: 
++------+-----------------------------+--------------------------------+------+
+|      |Instance                     |Module                          |Cells |
++------+-----------------------------+--------------------------------+------+
+|1     |top                          |                                | 11628|
+|2     |  inst                       |z1top_draw_triangle             | 10788|
+|3     |    bp                       |button_parser                   |    58|
+|4     |      button_debouncer       |debouncer                       |    52|
+|5     |        \genblk1[0].sat_cnt  |REGISTER_R_CE                   |    22|
+|6     |        wrapping_cnt         |REGISTER_R                      |    30|
+|7     |      button_edge_detector   |edge_detector                   |     3|
+|8     |        edge_detect          |REGISTER_47                     |     2|
+|9     |        last_input           |REGISTER_48                     |     1|
+|10    |      button_synchronizer    |synchronizer                    |     3|
+|11    |        reg_async            |REGISTER                        |     1|
+|12    |        reg_sync             |REGISTER_46                     |     2|
+|13    |    clk_wiz                  |clk_wiz                         |     4|
+|14    |    down_cnt_reg             |REGISTER_R_CE__parameterized3   |   130|
+|15    |    draw_triangle            |draw_triangle                   | 10027|
+|16    |      pixel_x_reg            |REGISTER_R_CE__parameterized3_7 |    48|
+|17    |      pixel_y_reg            |REGISTER_R_CE__parameterized3_8 |    49|
+|18    |      inside_test            |inside_test                     |  8358|
+|19    |        dx0_reg1             |REGISTER__parameterized0        |   437|
+|20    |        dx1_reg1             |REGISTER__parameterized0_9      |   450|
+|21    |        dx2_reg1             |REGISTER__parameterized0_10     |   437|
+|22    |        dy0_reg1             |REGISTER__parameterized0_11     |   476|
+|23    |        dy1_reg1             |REGISTER__parameterized0_12     |   476|
+|24    |        dy2_reg1             |REGISTER__parameterized0_13     |   489|
+|25    |        is_inside_reg        |REGISTER__parameterized1        |     1|
+|26    |        pixel_reg_L0         |REGISTER__parameterized0_14     |    37|
+|27    |        pixel_reg_L1         |REGISTER__parameterized0_15     |    36|
+|28    |        pixel_reg_L2         |REGISTER__parameterized0_16     |    36|
+|29    |        pixel_x_reg0         |REGISTER__parameterized0_17     |    32|
+|30    |        pixel_x_regA0        |REGISTER__parameterized0_18     |   184|
+|31    |        pixel_x_regA1        |REGISTER__parameterized0_19     |   184|
+|32    |        pixel_x_regA2        |REGISTER__parameterized0_20     |   184|
+|33    |        pixel_x_regB0        |REGISTER__parameterized0_21     |   184|
+|34    |        pixel_x_regB1        |REGISTER__parameterized0_22     |   184|
+|35    |        pixel_x_regB2        |REGISTER__parameterized0_23     |   184|
+|36    |        pixel_x_regC0        |REGISTER__parameterized0_24     |   110|
+|37    |        pixel_x_regC1        |REGISTER__parameterized0_25     |   110|
+|38    |        pixel_x_regC2        |REGISTER__parameterized0_26     |   110|
+|39    |        pixel_x_reg_val0     |REGISTER__parameterized0_27     |  1247|
+|40    |        pixel_x_reg_val1     |REGISTER__parameterized0_28     |    32|
+|41    |        pixel_x_reg_val1_1   |REGISTER__parameterized0_29     |    56|
+|42    |        pixel_y_reg0         |REGISTER__parameterized0_30     |    32|
+|43    |        pixel_y_reg_val0     |REGISTER__parameterized0_31     |  1247|
+|44    |        pixel_y_reg_val1     |REGISTER__parameterized0_32     |    32|
+|45    |        pixel_y_reg_val1_1   |REGISTER__parameterized0_33     |    57|
+|46    |        x0_reg0              |REGISTER__parameterized0_34     |    40|
+|47    |        x0_reg1              |REGISTER__parameterized0_35     |   184|
+|48    |        x1_reg0              |REGISTER__parameterized0_36     |    40|
+|49    |        x1_reg1              |REGISTER__parameterized0_37     |   202|
+|50    |        x2_reg0              |REGISTER__parameterized0_38     |    39|
+|51    |        x2_reg1              |REGISTER__parameterized0_39     |   152|
+|52    |        y0_reg0              |REGISTER__parameterized0_40     |    39|
+|53    |        y0_reg1              |REGISTER__parameterized0_41     |   202|
+|54    |        y1_reg0              |REGISTER__parameterized0_42     |    40|
+|55    |        y1_reg1              |REGISTER__parameterized0_43     |   152|
+|56    |        y2_reg0              |REGISTER__parameterized0_44     |    40|
+|57    |        y2_reg1              |REGISTER__parameterized0_45     |   184|
+|58    |    led_test                 |REGISTER_CE__parameterized0     |     4|
+|59    |    left_cnt_reg             |REGISTER_R_CE__parameterized3_0 |   152|
+|60    |    right_cnt_reg            |REGISTER_R_CE__parameterized3_1 |   137|
+|61    |    uart_rx                  |uart_receiver                   |    68|
+|62    |      bit_counter            |REGISTER_R_CE__parameterized0_3 |    11|
+|63    |      clock_counter          |REGISTER_R_CE__parameterized1_4 |    31|
+|64    |      has_byte_reg           |REGISTER_R_CE__parameterized2   |     2|
+|65    |      rx_shift               |REGISTER_CE_5                   |    23|
+|66    |      start_reg              |REGISTER_R_CE__parameterized2_6 |     1|
+|67    |    uart_tx                  |uart_transmitter                |    48|
+|68    |      bit_counter_reg        |REGISTER_R_CE__parameterized0   |     9|
+|69    |      clock_counter          |REGISTER_R_CE__parameterized1   |    25|
+|70    |      state_reg              |REGISTER_R__parameterized0      |     2|
+|71    |      tx_shift               |REGISTER_CE                     |    12|
+|72    |    up_cnt_reg               |REGISTER_R_CE__parameterized3_2 |   160|
++------+-----------------------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:40 . Memory (MB): peak = 752.109 ; gain = 459.035
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:00:40 . Memory (MB): peak = 752.109 ; gain = 459.035
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:40 . Memory (MB): peak = 752.109 ; gain = 459.035
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1114 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 859.094 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+78 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:48 . Memory (MB): peak = 859.094 ; gain = 566.020
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 859.094 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Robby/Desktop/Lab_5/Lab_5.runs/design_1_z1top_draw_triangle_0_0_synth_1/design_1_z1top_draw_triangle_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1303.348 ; gain = 444.254
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1174] Renamed 71 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1313.160 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Robby/Desktop/Lab_5/Lab_5.runs/design_1_z1top_draw_triangle_0_0_synth_1/design_1_z1top_draw_triangle_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_z1top_draw_triangle_0_0_utilization_synth.rpt -pb design_1_z1top_draw_triangle_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Mar  7 17:17:17 2021...

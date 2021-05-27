@@ -1,0 +1,14 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/Robby/Desktop/Lab_4/Lab_4.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/sim/display_controller_tb.v,1614102426,verilog,,,,display_controller_tb,,,../../../../../fpga_labs_sp21-main/lab4/src,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/sim/fifo_display_tb.v,1614102426,verilog,,,,fifo_display_tb,,,../../../../../fpga_labs_sp21-main/lab4/src,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/sim/fifo_tb.v,1614102426,verilog,,,,fifo_tb,,,../../../../../fpga_labs_sp21-main/lab4/src,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/src/colors.vh,1614102427,verilog,,,,,,,,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/src/display_controller.v,1614665745,verilog,,C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/src/fifo.v,C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/src/colors.vh,display_controller,,,../../../../../fpga_labs_sp21-main/lab4/src,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/src/fifo.v,1614650936,verilog,,C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/src/fifo_display.v,,fifo,,,../../../../../fpga_labs_sp21-main/lab4/src,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/src/fifo_display.v,1614102427,verilog,,C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/src/pixel_stream.v,,fifo_display,,,../../../../../fpga_labs_sp21-main/lab4/src,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/src/pixel_stream.v,1614102427,verilog,,C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/sim/fifo_display_tb.v,,pixel_stream,,,../../../../../fpga_labs_sp21-main/lab4/src,,,,,
+C:/Users/Robby/Desktop/fpga_labs_sp21-main/lib/EECS151.v,1614657640,verilog,,C:/Users/Robby/Desktop/fpga_labs_sp21-main/lab4/src/display_controller.v,,ASYNC_RAM;ASYNC_RAM_DP;ASYNC_ROM;REGISTER;REGISTER_CE;REGISTER_R;REGISTER_R_CE;SYNC_RAM;SYNC_RAM_DP;SYNC_ROM,,,../../../../../fpga_labs_sp21-main/lab4/src,,,,,
